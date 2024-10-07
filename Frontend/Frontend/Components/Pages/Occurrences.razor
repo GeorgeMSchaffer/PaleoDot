@@ -1,0 +1,59 @@
+﻿@page "/Occurrences"
+@inject HttpClient client
+@using Backend.Models
+<h3>Fossil Occurrences</h3>
+@if(occurrences != null)
+{
+<h1>Showing @occurrences.Length Occurrences</h1>
+
+<div class="table-responsive">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Occurrence Name</th>
+            <th>Early Interval Name</th>
+            <th>Class</th>
+            <th>Family</th>
+            <th>Genus</th>
+            <th>Order</th>
+        </tr>
+        </thead>
+        <tbody>
+        @foreach (var occurrence in occurrences)
+        {
+        <tr>
+            <td>@occurrence.AcceptedName</td>
+            <td>@occurrence.EarlyInterval</td>
+            <td>@occurrence.Class</td>
+            <td>@occurrence.Family</td>
+            <td>@occurrence.Genus</td>
+            <td>@occurrence.Order</td>
+        </tr>
+        }
+        }
+        </tbody>
+    </table>
+</div>
+}
+else if(isLoading)
+{
+<p><em>Loading....</em></p>
+}
+else
+{
+<h2>No Occurrences Found</h2>
+}
+}
+@code {
+    //[TODO] Switch to using DTOs
+    private Occurrence[] occurrences;
+    private Boolean isLoading = false;
+    
+    protected override async Task OnInitializedAsync()
+    {
+        isLoading = true;
+        //[TODO] fix endpoints so they have the same pluralization and use the created httpClient registered in Program.cs
+        occurrences = await client.GetFromJsonAsync<Occurrence[]>("https://localhost:8443/api/occurrence?skip=0&limit=10&sortBy=interval_no&sortDir=ASC");
+        isLoading = false;
+    }
+}

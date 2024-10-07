@@ -1,0 +1,74 @@
+﻿@page "/Intervals"
+@inject HttpClient client
+@using Backend.Models
+@using Humanizer
+<h3>Intervals</h3>
+
+@if (isLoading != null && isLoading)
+{
+    <b>Loading....</b>
+}
+@if (intervals != null)
+{
+<h3>Showing @intervals.Length Intervals</h3>
+}
+else if(isLoading)
+{
+<p><em>Loading....</em></p>
+}
+@if (intervals != null && intervals.Length > 0)
+{
+    <IntervalSelectFilter Intervals="intervals" OnIntervalChanged="(ChangeEventArgs e) => onIntervalSelected(e)"/>
+}
+{
+@if (intervals != null && intervals.Length > 0)
+{
+<table class="table">
+    <thead>
+    <tr>
+        <th>Interval Name</th>
+        <th>Record Type</th>
+        <th>Start MYA</th>
+        <th>End MYA</th>
+
+        <!-- Add other headers as per your data -->
+    </tr>
+    </thead>
+    <tbody>
+    @if (intervals != null)
+    {
+    @foreach (var interval in intervals)
+    {
+    <tr>
+        <td>@interval.IntervalName</td>
+        <td>@interval.RecordType</td>
+        <td>@interval.MinMya</td>
+        <td>@interval.MaxMya</td>
+    </tr>
+    }
+    }
+    </tbody>
+</table>
+}
+@code {
+    //[TODO] Switch to using DTOs
+    private Interval[] intervals;
+    private Boolean isLoading = false;
+    
+    public void  onIntervalSelected(ChangeEventArgs e)
+    {
+        string intervalName = e.Value.ToString();
+        // Do something with the selected interval
+        var filtered = intervals.Where(i => i.IntervalName == intervalName).ToArray();
+        intervals = filtered.ToArray();
+
+    }
+    
+    protected override async Task OnInitializedAsync()
+    {
+        isLoading = true;
+        //[TODO] fix endpoints so they have the same pluralization and use the created httpClient registered in Program.cs
+        intervals = await client.GetFromJsonAsync<Interval[]>("https://localhost:8443/intervals/?skip=0&limit=10&sortBy=min_ma&sortDir=ASC");
+        isLoading = false;
+    }
+}

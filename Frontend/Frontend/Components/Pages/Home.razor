@@ -1,0 +1,21 @@
+﻿@page "/"
+@inject HttpClient client
+@using Backend.Models
+<PageTitle>Home</PageTitle>
+
+Welcome to your new app.
+@code {
+    //[TODO] Switch to using DTOs
+    private Interval[] intervals;
+    private Occurrence[] occurrences;
+    private Boolean isLoading = false;
+    
+    // protected override async Task OnInitializedAsync()
+    // {
+    //     isLoading = true;
+    //     //[TODO] fix endpoints so they have the same pluralization and use the created httpClient registered in Program.cs
+    //     intervals = await client.GetFromJsonAsync<Interval[]>("https://localhost:8443/intervals?skip=0&limit=10&sortBy=interval_no&sortDir=ASC");
+    //     occurrences = await client.GetFromJsonAsync<Occurrence[]>("https://localhost:8443/api/occurrence?skip=0&limit=10&sortBy=interval_no&sortDir=ASC");
+    //     isLoading = false;
+    // }
+}

@@ -1,0 +1,40 @@
+﻿@using Backend.Models
+<div>
+
+    <select @onchange="OnIntervalSelected">
+        <option value="">Select interval</option>
+        @if (Intervals != null)
+        {
+            @foreach (var interval in Intervals)
+            {
+                
+                <option @onchange="@(e=> OnIntervalSelected(e))" value="@interval.IntervalName">@interval.IntervalName</option>
+                }
+                }
+    </select>
+</div>
+
+@if (selectedInterval != null)
+{
+    <!-- Display selected interval information -->
+    <p>Selected interval: @selectedInterval.IntervalName</p>
+}
+
+@code {
+    [Parameter]
+    public Interval[] Intervals { get; set; }
+
+    [Parameter]
+    public EventCallback<String> OnIntervalChanged { get; set; }
+    
+    private Interval selectedInterval; 
+    
+    
+    private async Task OnIntervalSelected(ChangeEventArgs e)
+    {
+        string selectedName = e.Value.ToString();
+        selectedInterval = Intervals.FirstOrDefault(i => i.IntervalName == selectedName);
+        OnIntervalChanged.InvokeAsync(selectedName);
+//        OnIntervalChanged.(OnIntervalChanged(selectedInterval.IntervalName));
+    }
+}
