@@ -69,6 +69,7 @@ namespace Backend.Controllers
             }
             catch (Exception e)
             {
+                //[TODO:] Log the error
                 return StatusCode(500, e.Message);
             }
     }
