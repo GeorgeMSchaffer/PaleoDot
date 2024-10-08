@@ -22,7 +22,7 @@
 
 @code {
     [Parameter]
-    public Interval[] Intervals { get; set; }
+    public IEnumerable<Interval> Intervals { get; set; }
 
     [Parameter]
     public EventCallback<String> OnIntervalChanged { get; set; }

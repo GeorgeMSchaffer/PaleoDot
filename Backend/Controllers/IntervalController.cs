@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Backend.Contexts;
 using Backend.Models;
+using Backend.Models.DTOs;
 using Backend.Services;
 
 namespace Backend.Controllers
@@ -31,7 +32,7 @@ namespace Backend.Controllers
         }
 
         // GET: api/Interval
-        [HttpGet("/intervals")]
+        [HttpGet("")]
         public async Task<ActionResult<List<IntervalDTO>>> GetIntervals([FromQuery] int skip = 0, [FromQuery] int limit = 10, [FromQuery] string? sortBy = "interval_no", [FromQuery] string? sortDir = "ASC")
         {
             PaginationDTO pagination = new PaginationDTO()
@@ -48,7 +49,6 @@ namespace Backend.Controllers
             }
             return Ok(intervalDTOs);
         }
-
         // GET: api/Interval/5
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

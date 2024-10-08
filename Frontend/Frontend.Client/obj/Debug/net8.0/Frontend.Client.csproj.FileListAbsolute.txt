@@ -1031,6 +1031,11 @@ C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\Frontend.Clien
 C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\refint\Frontend.Client.dll
 C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\Frontend.Client.pdb
 C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\ref\Frontend.Client.dll
-C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\compressed\z6eu1ggrk8-vn66t82ik2.gz
-C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\compressed\fw6fh9k3ku-xgc20abd3m.gz
-C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\compressed\6abe6ddfu9-68ivf0ckb8.gz
+C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\bin\Debug\net8.0\wwwroot\_framework\BlazorBootstrap.wasm
+C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\bin\Debug\net8.0\wwwroot\_framework\BlazorBootstrap.wasm.gz
+C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\bin\Debug\net8.0\BlazorBootstrap.dll
+C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\webcil\BlazorBootstrap.wasm
+C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\compressed\ouvwc0u0cv-ixtqegawxb.gz
+C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\compressed\z6eu1ggrk8-dfrdf2pr1b.gz
+C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\compressed\fw6fh9k3ku-osa9cii71e.gz
+C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\compressed\6abe6ddfu9-52f1cjx5q8.gz

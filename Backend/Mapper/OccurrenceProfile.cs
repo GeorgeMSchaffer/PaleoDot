@@ -1,6 +1,7 @@
 namespace Backend.Mapper;
 using AutoMapper;
 using Backend.Models;
+using Backend.Models.DTOs;
 public class OccurrenceProfile : Profile
 {
     public OccurrenceProfile()

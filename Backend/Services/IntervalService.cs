@@ -3,17 +3,16 @@ using AutoMapper;
 using Backend.Contexts;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-
-namespace Backend.Services;
 using Backend.Models;
-
+using Backend.Models.DTOs;
+namespace Backend.Services;
 public interface IIntervalService
 {
     public Task<List<Interval>> GetIntervals(PaginationDTO pagination);
     public Task<IntervalDTO> findIntervalByID(int id);
     public void UpdateInterval(IntervalDTO intervalDTO);
     public List<IntervalDTO> getIntervalsByType(String type, PaginationDTO pagination);
-
+    
 }
 public class IntervalService : IIntervalService{
     private AppDbContext _context;

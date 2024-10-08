@@ -327,3 +327,15 @@ C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\runtimes\win\lib\net8
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Backend.dll
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Backend.pdb
 C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\Frontend.MvcApplicationPartsAssemblyInfo.cs
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\SampleData\carnian-occurrences.json
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\SampleData\carnian-taxa.json
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\SampleData\intervals.json
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\SampleData\lopingan-occurrences.json
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\SampleData\permian-occurrences-full.json
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\SampleData\permian-occurrences.json
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\BlazorBootstrap.dll
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll

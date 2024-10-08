@@ -3,7 +3,11 @@ using Frontend.Client.Pages;
 using Frontend.Components;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri("http://localhost:8080/api/") });
+builder.Services.AddBlazorBootstrap();
+var BaseAddress = new Uri(builder.Configuration["FrontendUrl"] ?? "https://localhost:4000");
+
+//builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(BaseAddress.ToString()) });
+builder.Services.AddHttpClient();
 // builder.Services.AddDbContextPool<AppDBContext>(options =>
 // {
 //     var connetionString = "server=127.0.0.1;uid=root;pwd=rsbr220Sql!;database=paleo"; //Configuration.GetConnectionString("DefaultConnection");

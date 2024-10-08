@@ -8,10 +8,14 @@ using Microsoft.EntityFrameworkCore;
 using Backend.Contexts;
 using Backend.Models;
 using Backend.Services;
+using Backend.Models.DTOs;
 
 namespace Backend.Controllers
 {
     [Route("api/[controller]")]
+    [ProducesResponseType(404, Type = typeof(NotFoundResult))]
+    [ProducesResponseType(400, Type = typeof(BadRequestResult))]
+    [ProducesResponseType(500, Type = typeof(RequestError))]
     [ApiController]
     public class OccurrenceController : ControllerBase
     {
@@ -23,6 +27,7 @@ namespace Backend.Controllers
 
         // GET: api/Occurrence
         [HttpGet("")]
+        [ProducesResponseType(200, Type = typeof(List<Occurrence>))]
         public async Task<ActionResult<List<Occurrence>>> GetOccurrences([FromQuery] int skip = 0, [FromQuery] int limit = 10, [FromQuery] string? sortBy = "interval_no", [FromQuery] string? sortDir = "ASC")
         {
             PaginationDTO pagination = new PaginationDTO()
@@ -42,11 +47,24 @@ namespace Backend.Controllers
             }
             return Ok(occurrences);
         }
- [HttpGet("interval/{intervalName}/")]
+
+            [HttpGet("diversity/")]
+            public async Task<List<DiversityCountsDTO>> getDiversity()
+            {
+                var diversity = await _service.getDiversity();
+                return diversity;
+            }
+            
+            [HttpGet("diversity/{intervalName}/")]
+            public async Task<ActionResult<DiversityCountsDTO>>getDiversityByIntervalName(string intervalName)
+            {
+                var diversity = await _service.getDiversityByIntervalName(intervalName);
+                return diversity;
+            }
  
         // GET: api/Interval/5
         [HttpGet("{id}")]
-        [ProducesResponseType(404, Type = typeof(NotFoundResult))]
+
         public async Task<List<OccurrenceDTO>> getOccurrencesByIntervalName(string intervalName,[FromQuery] int skip = 0, [FromQuery] int limit = 10, [FromQuery] string? sortBy = "interval_no", [FromQuery] string? sortDir = "ASC")
         {
             PaginationDTO pagination = new PaginationDTO()
@@ -61,6 +79,8 @@ namespace Backend.Controllers
             List<OccurrenceDTO> occurrences = await _service.GetOccurrencesByIntervalName(intervalName, pagination);
             return occurrences;
         }
+        
+        
       
     }
 }

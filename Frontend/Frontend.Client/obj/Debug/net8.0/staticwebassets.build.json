@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NOMMu4f2mJwg4R9os2uRHwzPjaBwAGOLbPCMz01pOEI=",
+  "Hash": "O2lFWwKduCEEFMuceEAtb5WGCZ+q32ipU3/fVtwGIj4=",
   "Source": "Frontend.Client",
   "BasePath": "/",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "68ivf0ckb8",
-      "Integrity": "+mLMvBLkiTa9pK973SbhRM9vZNIwxd8WdNIfhagzYKM=",
+      "Fingerprint": "52f1cjx5q8",
+      "Integrity": "g/V+EecLxYnO6zvnl8Mz4WMexTHgo03hxZY3N0/Yii0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\blazor.boot.json"
@@ -57,6 +57,27 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\the46\\.nuget\\packages\\microsoft.aspnetcore.components.webassembly\\8.0.8\\build\\net8.0\\blazor.webassembly.js"
+    },
+    {
+      "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\BlazorBootstrap.wasm",
+      "SourceId": "Frontend.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/BlazorBootstrap.wasm",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "WasmResource",
+      "AssetTraitValue": "runtime",
+      "Fingerprint": "ixtqegawxb",
+      "Integrity": "+jeQHjqZsB2T7+hDAnW2nNVPF+WG1FXmZK6+DEt+gbA=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\webcil\\BlazorBootstrap.wasm"
     },
     {
       "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\dotnet.js",
@@ -220,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "xgc20abd3m",
-      "Integrity": "X/yJ8h/kn3rWEqguIKMXtXx7dtKN4qlfKrPnQFT9KHU=",
+      "Fingerprint": "osa9cii71e",
+      "Integrity": "GG1qCGVh90fn503vP2cHlIv4XGhWUH+K2CCnU6floj0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\Frontend.Client.pdb"
@@ -241,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "vn66t82ik2",
-      "Integrity": "xZvEHyQ50zuZP92g5pdKQ0UxAze+dTMgyPmbsJalL30=",
+      "Fingerprint": "dfrdf2pr1b",
+      "Integrity": "GdOFpcVuka448kN9q7PYhPvPc0CqCUSvViEYcgFnB7s=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\webcil\\Frontend.Client.wasm"
@@ -5225,7 +5246,7 @@
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Net.Http.wasm"
     },
     {
-      "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-68ivf0ckb8.gz",
+      "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-52f1cjx5q8.gz",
       "SourceId": "Frontend.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -5239,8 +5260,8 @@
       "RelatedAsset": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "vbdq216ykc",
-      "Integrity": "BXQMgJQsJ+K8BfXECP1tTL2RZbW6myLV/qmnhqpKVNk=",
+      "Fingerprint": "yf2k7yzm6m",
+      "Integrity": "XihCW7wUcD5IEKShGpP0dSglx26eclqb2/MKKZGTU2Y=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -6422,7 +6443,7 @@
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Runtime.Serialization.wasm"
     },
     {
-      "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-xgc20abd3m.gz",
+      "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-osa9cii71e.gz",
       "SourceId": "Frontend.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -6436,8 +6457,8 @@
       "RelatedAsset": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Client.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "q3zwd2wkec",
-      "Integrity": "tu62ZkE42FASuY6jwmGXKhQiViIfi7znhp5Qe4T6K6E=",
+      "Fingerprint": "r1n326ev04",
+      "Integrity": "ka5Nqai8rWLSHuidElmES/WNB+2ZuaAmkQPBQFIauxQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Client.pdb"
@@ -7407,6 +7428,27 @@
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Reflection.Metadata.wasm"
+    },
+    {
+      "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\ouvwc0u0cv-ixtqegawxb.gz",
+      "SourceId": "Frontend.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\",
+      "BasePath": "/",
+      "RelativePath": "_framework/BlazorBootstrap.wasm.gz",
+      "AssetKind": "Build",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\BlazorBootstrap.wasm",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "m2wnnvvfau",
+      "Integrity": "4vqcDhct9jGq8oHXlbI+bsc9SYgSQk0S7zk10oY1XRc=",
+      "CopyToOutputDirectory": "PreserveNewest",
+      "CopyToPublishDirectory": "Never",
+      "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\BlazorBootstrap.wasm"
     },
     {
       "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\ovxav528ld-e19gqtgvlh.gz",
@@ -8564,7 +8606,7 @@
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Text.RegularExpressions.wasm"
     },
     {
-      "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-vn66t82ik2.gz",
+      "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-dfrdf2pr1b.gz",
       "SourceId": "Frontend.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -8578,8 +8620,8 @@
       "RelatedAsset": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Client.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "k4ba00uh0w",
-      "Integrity": "LIkSg+oSyBzmSvUWgWZgDn9+B6nTmpsXVsg7xSWfq+k=",
+      "Fingerprint": "yfm8s8hjyx",
+      "Integrity": "YlDi8YZbq2+x2x+8BzaDVZQCm9/5FuNg3UoAps4pTeU=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Client.wasm"
@@ -8627,6 +8669,27 @@
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Runtime.InteropServices.JavaScript.wasm"
     },
     {
+      "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Frontend.Client.styles.css",
+      "SourceId": "Frontend.Client",
+      "SourceType": "Computed",
+      "ContentRoot": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "BasePath": "/",
+      "RelativePath": "Frontend.Client#[.{fingerprint}]?.styles.css",
+      "AssetKind": "All",
+      "AssetMode": "CurrentProject",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ApplicationBundle",
+      "Fingerprint": "4wh4y5oedl",
+      "Integrity": "bDbOXFZjk+rnnJxiB/mmSGKWKbmrMmBY6JjOx3P5Kn4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Frontend.Client.styles.css"
+    },
+    {
       "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\wwwroot\\appsettings.Development.json",
       "SourceId": "Frontend.Client",
       "SourceType": "Discovered",
@@ -8667,9 +8730,473 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\appsettings.json"
+    },
+    {
+      "Identity": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\Blazor.Bootstrap.bundle.scp.css",
+      "SourceId": "Blazor.Bootstrap",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\",
+      "BasePath": "_content/Blazor.Bootstrap",
+      "RelativePath": "Blazor.Bootstrap.bundle.scp.css",
+      "AssetKind": "All",
+      "AssetMode": "Reference",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "ScopedCss",
+      "AssetTraitValue": "ProjectBundle",
+      "Fingerprint": "9pixr9552e",
+      "Integrity": "E9QnlAmc6FCKQ12unLwOlh6hUcUx/XUc2bitsqVDVco=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\Blazor.Bootstrap.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\blazor.bootstrap.css",
+      "SourceId": "Blazor.Bootstrap",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\",
+      "BasePath": "_content/Blazor.Bootstrap",
+      "RelativePath": "blazor.bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yoeif30kwf",
+      "Integrity": "HopJKwHvn6Cr9f/7OiDpO/6tEO8EmXJrrin9lzeOOXg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\blazor.bootstrap.css"
+    },
+    {
+      "Identity": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\blazor.bootstrap.js",
+      "SourceId": "Blazor.Bootstrap",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\",
+      "BasePath": "_content/Blazor.Bootstrap",
+      "RelativePath": "blazor.bootstrap.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vc9g1nou3m",
+      "Integrity": "X/DJ5i9rFNw+60KIBuJ1SA0RXVJAbsW3eiSoeo+GhQw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\blazor.bootstrap.js"
+    },
+    {
+      "Identity": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\blazor.bootstrap.pdf.js",
+      "SourceId": "Blazor.Bootstrap",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\",
+      "BasePath": "_content/Blazor.Bootstrap",
+      "RelativePath": "blazor.bootstrap.pdf.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ct0ej5e0q0",
+      "Integrity": "oAIj2P0Z/6hTwjGA3OGvWLdxMP4KwE35+AQzWQTpxAg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\blazor.bootstrap.pdf.js"
+    },
+    {
+      "Identity": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\blazor.bootstrap.sortable-list.js",
+      "SourceId": "Blazor.Bootstrap",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\",
+      "BasePath": "_content/Blazor.Bootstrap",
+      "RelativePath": "blazor.bootstrap.sortable-list.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ezlxc6gzv3",
+      "Integrity": "du71NM6e2+m9l81ldV+Gbr74ER7Xx1GnJFg+rIY6OQU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\blazor.bootstrap.sortable-list.js"
+    },
+    {
+      "Identity": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\icon\\128X128.png",
+      "SourceId": "Blazor.Bootstrap",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\",
+      "BasePath": "_content/Blazor.Bootstrap",
+      "RelativePath": "icon/128X128.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "tngynhsog2",
+      "Integrity": "J1yB7ftYf6PWiU1781eE0JHBGfd1MV/XlLaxpVy09RU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\icon\\128X128.png"
+    },
+    {
+      "Identity": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\pdfjs-4.0.379.min.js",
+      "SourceId": "Blazor.Bootstrap",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\",
+      "BasePath": "_content/Blazor.Bootstrap",
+      "RelativePath": "pdfjs-4.0.379.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j8zp7bt7w3",
+      "Integrity": "XX7we2CiSWzj3rsNtKFCod90LBYAJ3bo8rmu4EuN7SQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\pdfjs-4.0.379.min.js"
+    },
+    {
+      "Identity": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\pdfjs-4.0.379.worker.min.js",
+      "SourceId": "Blazor.Bootstrap",
+      "SourceType": "Package",
+      "ContentRoot": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\",
+      "BasePath": "_content/Blazor.Bootstrap",
+      "RelativePath": "pdfjs-4.0.379.worker.min.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "79hai7knhw",
+      "Integrity": "JbwqIn9Fic7JuWyTXuNnAA1T0dYQ2tkTi9HhrSltUtQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\pdfjs-4.0.379.worker.min.js"
     }
   ],
   "Endpoints": [
+    {
+      "Route": "_content/Blazor.Bootstrap/Blazor.Bootstrap.bundle.scp.css",
+      "AssetFile": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\Blazor.Bootstrap.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13813"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"E9QnlAmc6FCKQ12unLwOlh6hUcUx/XUc2bitsqVDVco=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 01 Jul 2024 07:21:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-E9QnlAmc6FCKQ12unLwOlh6hUcUx/XUc2bitsqVDVco="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazor.Bootstrap/blazor.bootstrap.css",
+      "AssetFile": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\blazor.bootstrap.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "20005"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HopJKwHvn6Cr9f/7OiDpO/6tEO8EmXJrrin9lzeOOXg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 15 Jul 2024 07:36:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HopJKwHvn6Cr9f/7OiDpO/6tEO8EmXJrrin9lzeOOXg="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazor.Bootstrap/blazor.bootstrap.js",
+      "AssetFile": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\blazor.bootstrap.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "76428"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"X/DJ5i9rFNw+60KIBuJ1SA0RXVJAbsW3eiSoeo+GhQw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 Aug 2024 11:27:44 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-X/DJ5i9rFNw+60KIBuJ1SA0RXVJAbsW3eiSoeo+GhQw="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazor.Bootstrap/blazor.bootstrap.pdf.js",
+      "AssetFile": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\blazor.bootstrap.pdf.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7290"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"oAIj2P0Z/6hTwjGA3OGvWLdxMP4KwE35+AQzWQTpxAg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 15 Jul 2024 07:36:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-oAIj2P0Z/6hTwjGA3OGvWLdxMP4KwE35+AQzWQTpxAg="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazor.Bootstrap/blazor.bootstrap.sortable-list.js",
+      "AssetFile": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\blazor.bootstrap.sortable-list.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1930"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"du71NM6e2+m9l81ldV+Gbr74ER7Xx1GnJFg+rIY6OQU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 15 Apr 2024 19:30:56 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-du71NM6e2+m9l81ldV+Gbr74ER7Xx1GnJFg+rIY6OQU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazor.Bootstrap/icon/128X128.png",
+      "AssetFile": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\icon\\128X128.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7074"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"J1yB7ftYf6PWiU1781eE0JHBGfd1MV/XlLaxpVy09RU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 19 Apr 2022 11:45:42 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-J1yB7ftYf6PWiU1781eE0JHBGfd1MV/XlLaxpVy09RU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazor.Bootstrap/pdfjs-4.0.379.min.js",
+      "AssetFile": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\pdfjs-4.0.379.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "305685"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XX7we2CiSWzj3rsNtKFCod90LBYAJ3bo8rmu4EuN7SQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 15 Jul 2024 07:36:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XX7we2CiSWzj3rsNtKFCod90LBYAJ3bo8rmu4EuN7SQ="
+        }
+      ]
+    },
+    {
+      "Route": "_content/Blazor.Bootstrap/pdfjs-4.0.379.worker.min.js",
+      "AssetFile": "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\staticwebassets\\pdfjs-4.0.379.worker.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1029159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"JbwqIn9Fic7JuWyTXuNnAA1T0dYQ2tkTi9HhrSltUtQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 15 Jul 2024 07:36:20 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-JbwqIn9Fic7JuWyTXuNnAA1T0dYQ2tkTi9HhrSltUtQ="
+        }
+      ]
+    },
     {
       "Route": "_framework/blazor.boot.json",
       "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
@@ -8681,7 +9208,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "19743"
+          "Value": "19829"
         },
         {
           "Name": "Content-Type",
@@ -8689,11 +9216,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+mLMvBLkiTa9pK973SbhRM9vZNIwxd8WdNIfhagzYKM=\""
+          "Value": "\"g/V+EecLxYnO6zvnl8Mz4WMexTHgo03hxZY3N0/Yii0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Oct 2024 18:07:25 GMT"
+          "Value": "Tue, 08 Oct 2024 20:16:33 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8703,18 +9230,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+mLMvBLkiTa9pK973SbhRM9vZNIwxd8WdNIfhagzYKM="
+          "Value": "sha256-g/V+EecLxYnO6zvnl8Mz4WMexTHgo03hxZY3N0/Yii0="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-68ivf0ckb8.gz",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-52f1cjx5q8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000114429569"
+          "Quality": "0.000113908190"
         }
       ],
       "ResponseHeaders": [
@@ -8724,15 +9251,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8738"
+          "Value": "8778"
         },
         {
           "Name": "ETag",
-          "Value": "\"BXQMgJQsJ+K8BfXECP1tTL2RZbW6myLV/qmnhqpKVNk=\""
+          "Value": "\"XihCW7wUcD5IEKShGpP0dSglx26eclqb2/MKKZGTU2Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Oct 2024 17:45:14 GMT"
+          "Value": "Tue, 08 Oct 2024 20:16:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8752,19 +9279,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"+mLMvBLkiTa9pK973SbhRM9vZNIwxd8WdNIfhagzYKM=\""
+          "Value": "W/\"g/V+EecLxYnO6zvnl8Mz4WMexTHgo03hxZY3N0/Yii0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+mLMvBLkiTa9pK973SbhRM9vZNIwxd8WdNIfhagzYKM="
+          "Value": "sha256-g/V+EecLxYnO6zvnl8Mz4WMexTHgo03hxZY3N0/Yii0="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-68ivf0ckb8.gz",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-52f1cjx5q8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8773,7 +9300,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8738"
+          "Value": "8778"
         },
         {
           "Name": "Content-Type",
@@ -8781,11 +9308,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BXQMgJQsJ+K8BfXECP1tTL2RZbW6myLV/qmnhqpKVNk=\""
+          "Value": "\"XihCW7wUcD5IEKShGpP0dSglx26eclqb2/MKKZGTU2Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Oct 2024 17:45:14 GMT"
+          "Value": "Tue, 08 Oct 2024 20:16:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8803,7 +9330,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BXQMgJQsJ+K8BfXECP1tTL2RZbW6myLV/qmnhqpKVNk="
+          "Value": "sha256-XihCW7wUcD5IEKShGpP0dSglx26eclqb2/MKKZGTU2Y="
         }
       ]
     },
@@ -8941,6 +9468,143 @@
         {
           "Name": "integrity",
           "Value": "sha256-y/s3nGi6eAQS8X+SG2beA4cSPtVZ/vIp0iOWxFwDRD8="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/BlazorBootstrap.wasm",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\BlazorBootstrap.wasm",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "822037"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+jeQHjqZsB2T7+hDAnW2nNVPF+WG1FXmZK6+DEt+gbA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Oct 2024 16:46:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+jeQHjqZsB2T7+hDAnW2nNVPF+WG1FXmZK6+DEt+gbA="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/BlazorBootstrap.wasm",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\ouvwc0u0cv-ixtqegawxb.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000003643611"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "274452"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4vqcDhct9jGq8oHXlbI+bsc9SYgSQk0S7zk10oY1XRc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Oct 2024 16:46:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"+jeQHjqZsB2T7+hDAnW2nNVPF+WG1FXmZK6+DEt+gbA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+jeQHjqZsB2T7+hDAnW2nNVPF+WG1FXmZK6+DEt+gbA="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/BlazorBootstrap.wasm.gz",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\ouvwc0u0cv-ixtqegawxb.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "274452"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/wasm"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4vqcDhct9jGq8oHXlbI+bsc9SYgSQk0S7zk10oY1XRc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Oct 2024 16:46:13 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4vqcDhct9jGq8oHXlbI+bsc9SYgSQk0S7zk10oY1XRc="
         }
       ]
     },
@@ -9914,7 +10578,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "16144"
+          "Value": "15460"
         },
         {
           "Name": "Content-Type",
@@ -9922,11 +10586,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"X/yJ8h/kn3rWEqguIKMXtXx7dtKN4qlfKrPnQFT9KHU=\""
+          "Value": "\"GG1qCGVh90fn503vP2cHlIv4XGhWUH+K2CCnU6floj0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Oct 2024 18:07:24 GMT"
+          "Value": "Tue, 08 Oct 2024 16:46:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9936,18 +10600,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-X/yJ8h/kn3rWEqguIKMXtXx7dtKN4qlfKrPnQFT9KHU="
+          "Value": "sha256-GG1qCGVh90fn503vP2cHlIv4XGhWUH+K2CCnU6floj0="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Client.pdb",
-      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-xgc20abd3m.gz",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-osa9cii71e.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000103885311"
+          "Quality": "0.000103487530"
         }
       ],
       "ResponseHeaders": [
@@ -9957,15 +10621,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9625"
+          "Value": "9662"
         },
         {
           "Name": "ETag",
-          "Value": "\"tu62ZkE42FASuY6jwmGXKhQiViIfi7znhp5Qe4T6K6E=\""
+          "Value": "\"ka5Nqai8rWLSHuidElmES/WNB+2ZuaAmkQPBQFIauxQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Oct 2024 17:45:11 GMT"
+          "Value": "Tue, 08 Oct 2024 16:46:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9985,19 +10649,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"X/yJ8h/kn3rWEqguIKMXtXx7dtKN4qlfKrPnQFT9KHU=\""
+          "Value": "W/\"GG1qCGVh90fn503vP2cHlIv4XGhWUH+K2CCnU6floj0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-X/yJ8h/kn3rWEqguIKMXtXx7dtKN4qlfKrPnQFT9KHU="
+          "Value": "sha256-GG1qCGVh90fn503vP2cHlIv4XGhWUH+K2CCnU6floj0="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Client.pdb.gz",
-      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-xgc20abd3m.gz",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-osa9cii71e.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10006,7 +10670,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9625"
+          "Value": "9662"
         },
         {
           "Name": "Content-Type",
@@ -10014,11 +10678,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"tu62ZkE42FASuY6jwmGXKhQiViIfi7znhp5Qe4T6K6E=\""
+          "Value": "\"ka5Nqai8rWLSHuidElmES/WNB+2ZuaAmkQPBQFIauxQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Oct 2024 17:45:11 GMT"
+          "Value": "Tue, 08 Oct 2024 16:46:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10036,7 +10700,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-tu62ZkE42FASuY6jwmGXKhQiViIfi7znhp5Qe4T6K6E="
+          "Value": "sha256-ka5Nqai8rWLSHuidElmES/WNB+2ZuaAmkQPBQFIauxQ="
         }
       ]
     },
@@ -10059,11 +10723,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"xZvEHyQ50zuZP92g5pdKQ0UxAze+dTMgyPmbsJalL30=\""
+          "Value": "\"GdOFpcVuka448kN9q7PYhPvPc0CqCUSvViEYcgFnB7s=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Oct 2024 18:07:25 GMT"
+          "Value": "Tue, 08 Oct 2024 16:46:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10073,18 +10737,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xZvEHyQ50zuZP92g5pdKQ0UxAze+dTMgyPmbsJalL30="
+          "Value": "sha256-GdOFpcVuka448kN9q7PYhPvPc0CqCUSvViEYcgFnB7s="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Client.wasm",
-      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-vn66t82ik2.gz",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-dfrdf2pr1b.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000269034167"
+          "Quality": "0.000269106566"
         }
       ],
       "ResponseHeaders": [
@@ -10094,15 +10758,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3716"
+          "Value": "3715"
         },
         {
           "Name": "ETag",
-          "Value": "\"LIkSg+oSyBzmSvUWgWZgDn9+B6nTmpsXVsg7xSWfq+k=\""
+          "Value": "\"YlDi8YZbq2+x2x+8BzaDVZQCm9/5FuNg3UoAps4pTeU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Oct 2024 17:45:12 GMT"
+          "Value": "Tue, 08 Oct 2024 16:46:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10122,19 +10786,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"xZvEHyQ50zuZP92g5pdKQ0UxAze+dTMgyPmbsJalL30=\""
+          "Value": "W/\"GdOFpcVuka448kN9q7PYhPvPc0CqCUSvViEYcgFnB7s=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-xZvEHyQ50zuZP92g5pdKQ0UxAze+dTMgyPmbsJalL30="
+          "Value": "sha256-GdOFpcVuka448kN9q7PYhPvPc0CqCUSvViEYcgFnB7s="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Client.wasm.gz",
-      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-vn66t82ik2.gz",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-dfrdf2pr1b.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10143,7 +10807,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3716"
+          "Value": "3715"
         },
         {
           "Name": "Content-Type",
@@ -10151,11 +10815,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"LIkSg+oSyBzmSvUWgWZgDn9+B6nTmpsXVsg7xSWfq+k=\""
+          "Value": "\"YlDi8YZbq2+x2x+8BzaDVZQCm9/5FuNg3UoAps4pTeU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 07 Oct 2024 17:45:12 GMT"
+          "Value": "Tue, 08 Oct 2024 16:46:13 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10173,7 +10837,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-LIkSg+oSyBzmSvUWgWZgDn9+B6nTmpsXVsg7xSWfq+k="
+          "Value": "sha256-YlDi8YZbq2+x2x+8BzaDVZQCm9/5FuNg3UoAps4pTeU="
         }
       ]
     },
@@ -36916,6 +37580,96 @@
         {
           "Name": "integrity",
           "Value": "sha256-c/lfngzrIF/BxNxQwHaX/Pop1wh4aMKu8dUEyzjHcew="
+        }
+      ]
+    },
+    {
+      "Route": "Frontend.Client.4wh4y5oedl.styles.css",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Frontend.Client.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bDbOXFZjk+rnnJxiB/mmSGKWKbmrMmBY6JjOx3P5Kn4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Oct 2024 16:46:14 GMT"
+        },
+        {
+          "Name": "Link",
+          "Value": "<_content/Blazor.Bootstrap/Blazor.Bootstrap.bundle.scp.css>; rel=\"preload\"; as=\"style\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "4wh4y5oedl"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bDbOXFZjk+rnnJxiB/mmSGKWKbmrMmBY6JjOx3P5Kn4="
+        },
+        {
+          "Name": "label",
+          "Value": "Frontend.Client.styles.css"
+        }
+      ]
+    },
+    {
+      "Route": "Frontend.Client.styles.css",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Frontend.Client.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "72"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bDbOXFZjk+rnnJxiB/mmSGKWKbmrMmBY6JjOx3P5Kn4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Oct 2024 16:46:14 GMT"
+        },
+        {
+          "Name": "Link",
+          "Value": "<_content/Blazor.Bootstrap/Blazor.Bootstrap.bundle.scp.css>; rel=\"preload\"; as=\"style\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bDbOXFZjk+rnnJxiB/mmSGKWKbmrMmBY6JjOx3P5Kn4="
         }
       ]
     }

@@ -2,10 +2,11 @@ using Backend.Contexts;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.EntityFrameworkCore;
 using Backend.Models;
-namespace Backend.Services;
+using Backend.Models.DTOs;
 using Backend.Models;
 using AutoMapper;
 using Backend.Services;
+namespace Backend.Services;
 
 public interface IOccurrenceService
 {
@@ -15,6 +16,8 @@ public interface IOccurrenceService
     Task<Occurrence?> Update(OccurrenceDTO occurrence);
     Task<bool> Delete(int id);
     Task<List<OccurrenceDTO>> GetOccurrencesByIntervalName(String intervalName,PaginationDTO pagination);
+    public Task<DiversityCountsDTO> getDiversityByIntervalName(string intervalName);
+    
 }
 
 public class OccurrenceService : IOccurrenceService
@@ -46,7 +49,59 @@ public class OccurrenceService : IOccurrenceService
         return occurrenceDTOs;
     }
 
-    public object OccurrenceJsonDTO { get; set; }
+    public async Task<DiversityCountsDTO> getDiversityByIntervalName(string intervalName = "")
+    {
+        var result = _context
+            .Occurrences
+                // Trying to do a conditional where we get diversity for all intervals if the intervalName is empty
+            .Where(o => intervalName== "" ? o.EarlyInterval == intervalName: 1==1)
+            .GroupBy(o => o.EarlyInterval)
+            .Select(g => new
+            {
+                IntervalName = g.Select(o=>o.EarlyInterval).FirstOrDefault(),
+                CountOfPhylum = g.Select(o => o.Phylum).Distinct().Count(),
+                CountOfClasses = g.Select(o => o.Class).Distinct().Count(),
+                CountOfOrders = g.Select(o => o.Order).Distinct().Count(),
+                CountOfFamilies = g.Select(o => o.Family).Distinct().Count(),
+                CountOfGenera = g.Select(o => o.Genus).Distinct().Count(),
+            })
+            .FirstOrDefault();    
+
+        return new DiversityCountsDTO(result.IntervalName,result.CountOfPhylum, result.CountOfClasses, result.CountOfOrders, result.CountOfFamilies, result.CountOfGenera);
+    }
+    
+    public async Task<List<DiversityCountsDTO>> getDiversity(string intervalName = "")
+    {
+        List<DiversityCountsDTO> diversities = new List<DiversityCountsDTO>();
+        var data = _context
+            .Occurrences
+            // Trying to do a conditional where we get diversity for all intervals if the intervalName is empty
+            .GroupBy(o => o.EarlyInterval)
+            .Select(g => new
+            {
+                CountOfPhylum = g.Select(o => o.Phylum).Distinct().Count(),
+                CountOfClasses = g.Select(o => o.Class).Distinct().Count(),
+                CountOfOrders = g.Select(o => o.Order).Distinct().Count(),
+                CountOfFamilies = g.Select(o => o.Family).Distinct().Count(),
+                CountOfGenera = g.Select(o => o.Genus).Distinct().Count(),
+                interval = g.Select(o=>o.EarlyInterval).FirstOrDefault()
+            }).ToListAsync();
+        data.Result.ForEach(
+            data =>
+            {
+                var dto = new DiversityCountsDTO(
+                   data.interval,
+                   data.CountOfPhylum,
+                   data.CountOfClasses,
+                   data.CountOfOrders,
+                   data.CountOfFamilies,
+                   data.CountOfGenera
+                );
+                diversities.Add(dto);
+            });
+        return diversities;
+        //return new DiversityCountsDTO(result, result.CountOfClasses, result.CountOfOrders, result.CountOfFamilies, result.CountOfGenera);
+    }
 
     public async Task<OccurrenceDTO> Get(int id)
     {

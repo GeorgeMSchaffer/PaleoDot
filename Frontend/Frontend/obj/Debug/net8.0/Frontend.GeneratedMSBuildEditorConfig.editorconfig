@@ -31,6 +31,10 @@ build_property.EffectiveAnalysisLevelStyle = 8.0
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/code/dotnet/PaleoDot/Frontend/Frontend/Components/Diversity.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xEaXZlcnNpdHkucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/code/dotnet/PaleoDot/Frontend/Frontend/Components/IntervalSelectFilter.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xJbnRlcnZhbFNlbGVjdEZpbHRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 

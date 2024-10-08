@@ -1,7 +1,13 @@
 ﻿@page "/Intervals"
 @inject HttpClient client
 @using Backend.Models
+@using BlazorBootstrap
+@using Microsoft.AspNetCore.Components.QuickGrid
+
 @using Humanizer
+@using SortDirection = Microsoft.AspNetCore.Components.QuickGrid.SortDirection
+@using Array = Mysqlx.Expr.Array
+
 <h3>Intervals</h3>
 
 @if (isLoading != null && isLoading)
@@ -10,65 +16,140 @@
 }
 @if (intervals != null)
 {
-<h3>Showing @intervals.Length Intervals</h3>
+<h3>Showing @intervals.Count() Intervals</h3>
 }
 else if(isLoading)
 {
 <p><em>Loading....</em></p>
 }
-@if (intervals != null && intervals.Length > 0)
-{
-    <IntervalSelectFilter Intervals="intervals" OnIntervalChanged="(ChangeEventArgs e) => onIntervalSelected(e)"/>
-}
-{
-@if (intervals != null && intervals.Length > 0)
-{
-<table class="table">
-    <thead>
-    <tr>
-        <th>Interval Name</th>
-        <th>Record Type</th>
-        <th>Start MYA</th>
-        <th>End MYA</th>
 
-        <!-- Add other headers as per your data -->
-    </tr>
-    </thead>
-    <tbody>
-    @if (intervals != null)
+
+<div>
+    
+    @if(errorMessage != null && errorMessage.Length > 0)
     {
-    @foreach (var interval in intervals)
-    {
-    <tr>
-        <td>@interval.IntervalName</td>
-        <td>@interval.RecordType</td>
-        <td>@interval.MinMya</td>
-        <td>@interval.MaxMya</td>
-    </tr>
+        <p role="alert" class="blazor-error-boundary">
+            @errorMessage
+        </p>
     }
-    }
-    </tbody>
-</table>
+
+        
+</div>
+
+@if (intervals != null)
+{
+    <IntervalSelectFilter  Intervals="intervals" OnIntervalChanged="OnIntervalChanged"/>
 }
+
+
+<div role="banner" align="center">
+    @if (isLoading)
+    {
+        <b>Loading...</b>
+    }
+</div>
+@if (intervals != null)
+{
+    <QuickGrid ItemKey="(i)=>i.IntervalNo" Items="intervals" Pagination="paginationState">
+        <PropertyColumn Property="@(i => i.IntervalName)" Align="Align.Center" Title="Interval Name" Sortable="true"/>
+        <PropertyColumn Property="@(i => i.MinMya)" Sortable="true" InitialSortDirection="SortDirection.Ascending" Title="Start MYA"/>
+        <PropertyColumn Property="@(i => i.MaxMya)" Sortable="true" Title="End MYA"/>
+        <PropertyColumn Property="@(i => i.RecordType)" Sortable="true" Title="Record Type"></PropertyColumn>
+        
+        <TemplateColumn Title="Color" TGridItem="Interval">
+            @if (context.Color != null)
+            {
+                <div style="background-color: @context.Color; width: 100%; height: 100%;">Color: @context.Color</div>
+            }
+        </TemplateColumn>
+        
+    </QuickGrid>
+}
+else if(isLoading)
+{
+    <p><em>Loading....</em></p>
+}
+
+
 @code {
     //[TODO] Switch to using DTOs
-    private Interval[] intervals;
+    private IQueryable<Interval> intervals;
     private Boolean isLoading = false;
-    
-    public void  onIntervalSelected(ChangeEventArgs e)
-    {
-        string intervalName = e.Value.ToString();
-        // Do something with the selected interval
-        var filtered = intervals.Where(i => i.IntervalName == intervalName).ToArray();
-        intervals = filtered.ToArray();
+    private string errorMessage = "";
+    public EventCallback<string> OnIntervalChanged { get; set; }
+    private Grid<Interval> grid;
+    private GridDataProviderResult<Interval> GridData;
 
+    private PaginationState paginationState = new PaginationState()
+    {
+        ItemsPerPage = 100
+    };
+    
+    
+    
+    private async Task OnIntervalChangedInvoke(string value)
+    {
+        if (value != null)
+        {
+            intervals = intervals.Where(i => i.IntervalName == value);
+            await Task.CompletedTask;
+        }
+        else
+        {
+            System.Console.WriteLine($"No interval name was received from the filter");
+        }
+    }
+
+    public async Task<IQueryable<Interval>> FetchIntervals(HttpClient client)
+    {
+
+        Console.WriteLine("Fetching intervals from the server");
+        var intervals = await client.GetFromJsonAsync<Interval[]>("https://localhost:8443/api/interval?skip=0&limit=100&sortBy=interval_no&sortDir=ASC");
+        return intervals.AsQueryable();
     }
     
     protected override async Task OnInitializedAsync()
     {
-        isLoading = true;
-        //[TODO] fix endpoints so they have the same pluralization and use the created httpClient registered in Program.cs
-        intervals = await client.GetFromJsonAsync<Interval[]>("https://localhost:8443/intervals/?skip=0&limit=10&sortBy=min_ma&sortDir=ASC");
-        isLoading = false;
+        try
+        {
+            isLoading = true;
+            intervals = await FetchIntervals(client);
+            //[TODO] fix endpoints so they have the same pluralization and use the created httpClient registered in Program.cs
+            GridData = new GridDataProviderResult<Interval>();
+        }
+        catch (Exception e)
+        {
+            errorMessage = e.Message;
+        }
+        finally
+        {
+            isLoading = false;
+        }
     }
+    // private async Task<GridDataProviderResult<Interval>> CustomersDataProvider(GridDataProviderRequest<Interval> request)
+    // {
+    //     string sortString = "";
+    //     SortDirection sortDirection = SortDirection.None;
+    //
+    //     if (request.Sorting is not null && request.Sorting.Any())
+    //     {
+    //         // Note: Multi column sorting is not supported at this moment
+    //         sortString = request.Sorting.FirstOrDefault()!.SortString;
+    //         sortDirection = request.Sorting.FirstOrDefault()!.SortDirection;
+    //     }
+    //     //var result = await _customerService.GetCustomersAsync(request.Filters, request.PageNumber, request.PageSize, sortString, sortDirection, request.CancellationToken);
+    //     return await Task.FromResult(new GridDataProviderResult<Interval> { Data = intervals, TotalCount = intervals.Count()});
+    // }
+    //
+    // private async Task<GridDataProviderResult<Interval>> IntervalsDataProvider(GridDataProviderRequest<Interval> request)
+    // {
+    //     GridData = new GridDataProviderResult<Interval>
+    //     {
+    //         Data = intervals,
+    //         TotalCount = intervals.Count()
+    //     };
+    //     var result =  await Task.FromResult(request.ApplyTo(intervals));
+    //     return result;
+    //
+    // }
 }

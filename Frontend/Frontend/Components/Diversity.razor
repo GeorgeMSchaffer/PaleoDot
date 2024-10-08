@@ -1,0 +1,74 @@
+﻿@page "/Diversity"
+@inject HttpClient client
+@using Backend.Models
+@using Backend.Models.DTOs
+@using Microsoft.AspNetCore.Components.QuickGrid
+
+<h3>Diversity</h3>
+<div>
+
+  @if(errorMessage != null && errorMessage.Length > 0)
+  {
+  <p role="alert" class="blazor-error-boundary">
+    @errorMessage
+  </p>
+  }
+
+
+</div>
+@if (diversities != null)
+{
+  <QuickGrid TGridItem="DiversityCountsDTO" Items="diversities">
+    <PropertyColumn Property="@(i => i.intervalName)" Align="Align.Center" InitialSortDirection="SortDirection.Ascending"  Title="Interval Name" Sortable="true"/>
+    <PropertyColumn Property="@(i => i.CountOfClasses)" Sortable="true" Title="Unique Classes"/>
+    <PropertyColumn Property="@(i => i.CountOfGenera)" Sortable="true" Title="Unique Genera"/>
+    <PropertyColumn Property="@(i => i.CountOfOrders)" Sortable="true" Title="Unique Orders"></PropertyColumn>
+    <PropertyColumn Property="@(i=> i.CountOfPhylum)" Sortable="true" Title="Unique Phyla"></PropertyColumn>
+        
+    <TemplateColumn Title="Color" TGridItem="Interval">
+      @if (context.Color != null)
+      {
+        <div style="background-color: @context.Color; width: 100%; height: 100%;">Color: @context.Color</div>
+      }
+    </TemplateColumn>
+        
+  </QuickGrid>
+}
+
+@code {
+  private IQueryable<DiversityCountsDTO> diversities;
+  private Boolean isLoading = false;
+  private string selectedInterval = "carnian";
+  private string errorMessage = "";
+  
+  public async Task<IQueryable<DiversityCountsDTO>> FetchDiversities(HttpClient client)
+  {
+
+    //        var intervals = await client.GetFromJsonAsync<Interval[]>("https://localhost:8443/api/interval?skip=0&limit=100&sortBy=interval_no&sortDir=ASC");
+
+    Console.WriteLine("Fetching intervals from the server");
+    var diversityCounts = await client.GetFromJsonAsync<IQueryable<DiversityCountsDTO>>("https://localhost:8443/api/Occurrence/diversity/");
+    System.Console.WriteLine("Retrieved " + diversityCounts.Count() + " diversity counts from the server");
+    return diversityCounts.AsQueryable();
+  }
+    
+  protected override async Task OnInitializedAsync()
+  {
+    try
+    {
+      isLoading = true;
+      diversities  = await FetchDiversities(client);
+      //[TODO] fix endpoints so they have the same pluralization and use the created httpClient registered in Program.cs
+    }
+    catch (Exception e)
+    {
+      errorMessage = e.Message;
+    }
+    finally
+    {
+      isLoading = false;
+    }
+  }
+  
+
+}
