@@ -7,6 +7,10 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="BlazorFluentUI.CoreComponents" Version="8.0.0" />
+        <PackageReference Include="ChartJs.Blazor" Version="1.1.0" />
+        <PackageReference Include="MudBlazor" Version="7.9.0" />
+        <PackageReference Include="PSC.Blazor.Components.Chartjs" Version="8.0.8" />
         <ProjectReference Include="..\..\Backend\Backend.csproj" />
         <ProjectReference Include="..\Frontend.Client\Frontend.Client.csproj"/>
         <PackageReference Include="Blazor.Bootstrap" Version="3.0.0" />

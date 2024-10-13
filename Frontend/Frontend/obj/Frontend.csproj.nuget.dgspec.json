@@ -308,6 +308,14 @@
               "target": "Package",
               "version": "[3.0.0, )"
             },
+            "BlazorFluentUI.CoreComponents": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "ChartJs.Blazor": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "Microsoft.AspNetCore.Components.QuickGrid": {
               "target": "Package",
               "version": "[8.0.10, )"
@@ -317,6 +325,14 @@
               "version": "[8.0.10, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "MudBlazor": {
+              "target": "Package",
+              "version": "[7.9.0, )"
+            },
+            "PSC.Blazor.Components.Chartjs": {
               "target": "Package",
               "version": "[8.0.8, )"
             },

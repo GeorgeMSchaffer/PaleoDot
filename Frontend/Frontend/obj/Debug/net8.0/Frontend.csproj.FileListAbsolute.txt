@@ -1,5 +1,4 @@
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Frontend.Client.staticwebassets.runtime.json
-C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Frontend.Client.staticwebassets.endpoints.json
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\appsettings.Development.json
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\appsettings.json
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\BlazorDebugProxy\BrowserDebugHost.dll
@@ -14,7 +13,6 @@ C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\BlazorDebugProxy\Micr
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\BlazorDebugProxy\Microsoft.SymbolStore.dll
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\BlazorDebugProxy\Newtonsoft.Json.dll
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Frontend.staticwebassets.runtime.json
-C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Frontend.staticwebassets.endpoints.json
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Frontend.exe
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Frontend.deps.json
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Frontend.runtimeconfig.json
@@ -48,9 +46,7 @@ C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\scopedcss\bundle\Fron
 C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\scopedcss\projectbundle\Frontend.bundle.scp.css
 C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\staticwebassets.build.json
 C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\staticwebassets.development.json
-C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssets.props
-C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\staticwebassets\msbuild.build.Frontend.props
 C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Frontend.props
 C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Frontend.props
@@ -63,7 +59,6 @@ C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\Frontend.genruntimeco
 C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\ref\Frontend.dll
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Backend.deps.json
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Backend.runtimeconfig.json
-C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Backend.staticwebassets.endpoints.json
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Backend.exe
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\AutoMapper.dll
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Azure.Core.dll
@@ -339,3 +334,15 @@ C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Microsoft.AspNetCore.
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Microsoft.Extensions.Caching.Memory.dll
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.dll
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\BlazorFluentUI.CoreComponents.dll
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\MudBlazor.dll
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\System.Reactive.dll
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Backend.staticwebassets.endpoints.json
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Frontend.Client.staticwebassets.endpoints.json
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\Frontend.staticwebassets.endpoints.json
+C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\ChartJs.Blazor.dll
+C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\PSC.Blazor.Components.Chartjs.dll

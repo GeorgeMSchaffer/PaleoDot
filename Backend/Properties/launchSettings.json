@@ -15,8 +15,7 @@
       "launchBrowser": true,
       "workingDirectory": "C:\\code\\dotnet\\PaleoDot\\Backend",
       "inspectUri": "{wsProtocol}://{url.hostname}:{url.port}/_framework/debug/ws-proxy?browser={browserInspectUri}",
-      "applicationUrl": "http://localhost:8080",
-      "sslPort": 8443,
+      "applicationUrl": "https://localhost:8433",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

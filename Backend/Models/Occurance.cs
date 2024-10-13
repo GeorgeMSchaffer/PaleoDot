@@ -47,6 +47,9 @@ public string? EarlyInterval { get; set; }
 [Column("early_interval_no")]
 public int? EarlyIntervalNo { get; set; }
 
+
+public Interval Interval { get; set; }
+
 [Column("late_interval_no")]
 public int? LateIntervalNo { get; set; }
 //

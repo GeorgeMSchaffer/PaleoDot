@@ -13,6 +13,34 @@
     <SourceRoot Include="C:\Users\the46\.nuget\packages\" />
   </ItemGroup>
   <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)psc.blazor.components.chartjs\8.0.8\contentFiles\any\net8.0\libman.json" Condition="Exists('$(NuGetPackageRoot)psc.blazor.components.chartjs\8.0.8\contentFiles\any\net8.0\libman.json')">
+      <NuGetPackageId>PSC.Blazor.Components.Chartjs</NuGetPackageId>
+      <NuGetPackageVersion>8.0.8</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>libman.json</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)psc.blazor.components.chartjs\8.0.8\contentFiles\any\net8.0\psc_ico.ico" Condition="Exists('$(NuGetPackageRoot)psc.blazor.components.chartjs\8.0.8\contentFiles\any\net8.0\psc_ico.ico')">
+      <NuGetPackageId>PSC.Blazor.Components.Chartjs</NuGetPackageId>
+      <NuGetPackageVersion>8.0.8</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>psc_ico.ico</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)chartjs.blazor\1.1.0\contentFiles\any\netstandard2.1\Properties\launchSettings.json" Condition="Exists('$(NuGetPackageRoot)chartjs.blazor\1.1.0\contentFiles\any\netstandard2.1\Properties\launchSettings.json')">
+      <NuGetPackageId>ChartJs.Blazor</NuGetPackageId>
+      <NuGetPackageVersion>1.1.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Properties\launchSettings.json</Link>
+    </Content>
+  </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Content Include="$(NuGetPackageRoot)bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.css" Condition="Exists('$(NuGetPackageRoot)bootstrap\5.3.3\contentFiles\any\any\wwwroot\css\bootstrap-grid.css')">
       <NuGetPackageId>bootstrap</NuGetPackageId>
       <NuGetPackageVersion>5.3.3</NuGetPackageVersion>
@@ -366,11 +394,33 @@
       <Link>wwwroot\js\bootstrap.min.js.map</Link>
     </Content>
   </ItemGroup>
+  <ItemGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Content Include="$(NuGetPackageRoot)blazorfluentui.corecomponents\8.0.0\contentFiles\any\net8.0\Icon\FluentSystemIcons-Filled.json" Condition="Exists('$(NuGetPackageRoot)blazorfluentui.corecomponents\8.0.0\contentFiles\any\net8.0\Icon\FluentSystemIcons-Filled.json')">
+      <NuGetPackageId>BlazorFluentUI.CoreComponents</NuGetPackageId>
+      <NuGetPackageVersion>8.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Icon\FluentSystemIcons-Filled.json</Link>
+    </Content>
+    <Content Include="$(NuGetPackageRoot)blazorfluentui.corecomponents\8.0.0\contentFiles\any\net8.0\Icon\FluentSystemIcons-Regular.json" Condition="Exists('$(NuGetPackageRoot)blazorfluentui.corecomponents\8.0.0\contentFiles\any\net8.0\Icon\FluentSystemIcons-Regular.json')">
+      <NuGetPackageId>BlazorFluentUI.CoreComponents</NuGetPackageId>
+      <NuGetPackageVersion>8.0.0</NuGetPackageVersion>
+      <NuGetItemType>Content</NuGetItemType>
+      <Pack>false</Pack>
+      <Private>False</Private>
+      <Link>Icon\FluentSystemIcons-Regular.json</Link>
+    </Content>
+  </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)psc.blazor.components.chartjs\8.0.8\buildTransitive\PSC.Blazor.Components.Chartjs.props" Condition="Exists('$(NuGetPackageRoot)psc.blazor.components.chartjs\8.0.8\buildTransitive\PSC.Blazor.Components.Chartjs.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.entityframeworkcore\8.0.10\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props" Condition="Exists('$(NuGetPackageRoot)microsoft.entityframeworkcore\8.0.10\buildTransitive\net8.0\Microsoft.EntityFrameworkCore.props')" />
+    <Import Project="$(NuGetPackageRoot)mudblazor\7.9.0\buildTransitive\MudBlazor.props" Condition="Exists('$(NuGetPackageRoot)mudblazor\7.9.0\buildTransitive\MudBlazor.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props" Condition="Exists('$(NuGetPackageRoot)microsoft.codeanalysis.analyzers\3.3.4\buildTransitive\Microsoft.CodeAnalysis.Analyzers.props')" />
     <Import Project="$(NuGetPackageRoot)microsoft.aspnetcore.components.quickgrid\8.0.10\buildTransitive\Microsoft.AspNetCore.Components.QuickGrid.props" Condition="Exists('$(NuGetPackageRoot)microsoft.aspnetcore.components.quickgrid\8.0.10\buildTransitive\Microsoft.AspNetCore.Components.QuickGrid.props')" />
     <Import Project="$(NuGetPackageRoot)blazor.bootstrap\3.0.0\buildTransitive\Blazor.Bootstrap.props" Condition="Exists('$(NuGetPackageRoot)blazor.bootstrap\3.0.0\buildTransitive\Blazor.Bootstrap.props')" />
+    <Import Project="$(NuGetPackageRoot)chartjs.blazor\1.1.0\buildTransitive\ChartJs.Blazor.props" Condition="Exists('$(NuGetPackageRoot)chartjs.blazor\1.1.0\buildTransitive\ChartJs.Blazor.props')" />
+    <Import Project="$(NuGetPackageRoot)blazorfluentui.corecomponents\8.0.0\buildTransitive\BlazorFluentUI.CoreComponents.props" Condition="Exists('$(NuGetPackageRoot)blazorfluentui.corecomponents\8.0.0\buildTransitive\BlazorFluentUI.CoreComponents.props')" />
   </ImportGroup>
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_Extensions_ApiDescription_Server Condition=" '$(PkgMicrosoft_Extensions_ApiDescription_Server)' == '' ">C:\Users\the46\.nuget\packages\microsoft.extensions.apidescription.server\6.0.5</PkgMicrosoft_Extensions_ApiDescription_Server>

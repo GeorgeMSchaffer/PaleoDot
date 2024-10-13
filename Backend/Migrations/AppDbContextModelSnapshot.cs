@@ -39,18 +39,18 @@ namespace Backend.Migrations
                         .HasColumnName("interval_name")
                         .HasAnnotation("Relational:JsonPropertyName", "interval_name");
 
-                    b.Property<double?>("MaxMya")
-                        .HasColumnType("double")
+                    b.Property<int?>("MaxMya")
+                        .HasColumnType("int")
                         .HasColumnName("max_ma")
                         .HasAnnotation("Relational:JsonPropertyName", "max_ma");
 
-                    b.Property<double?>("MinMya")
-                        .HasColumnType("double")
+                    b.Property<int?>("MinMya")
+                        .HasColumnType("int")
                         .HasColumnName("min_ma")
                         .HasAnnotation("Relational:JsonPropertyName", "min_ma");
 
-                    b.Property<int?>("ParentNo")
-                        .HasColumnType("int")
+                    b.Property<string>("ParentNo")
+                        .HasColumnType("longtext")
                         .HasColumnName("parent_no");
 
                     b.Property<string>("RecordType")
@@ -81,9 +81,28 @@ namespace Backend.Migrations
                         .HasColumnType("int")
                         .HasColumnName("occurrence_no");
 
+                    b.Property<string>("AcceptedName")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("accepted_name");
+
+                    b.Property<int>("AcceptedNo")
+                        .HasColumnType("int")
+                        .HasColumnName("accepted_no");
+
+                    b.Property<string>("AcceptedRank")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("accepted_rank");
+
                     b.Property<string>("Class")
                         .HasColumnType("longtext")
                         .HasColumnName("class");
+
+                    b.Property<string>("Composition")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("composition");
 
                     b.Property<string>("EarlyInterval")
                         .HasColumnType("longtext")
@@ -104,6 +123,15 @@ namespace Backend.Migrations
                     b.Property<string>("Genus")
                         .HasColumnType("longtext")
                         .HasColumnName("genus");
+
+                    b.Property<int>("IdentifiedNo")
+                        .HasColumnType("int")
+                        .HasColumnName("identified_no");
+
+                    b.Property<string>("IdentifiedRank")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("identified_rank");
 
                     b.Property<double?>("Lat")
                         .HasColumnType("double")
@@ -146,9 +174,30 @@ namespace Backend.Migrations
                         .HasColumnType("longtext")
                         .HasColumnName("phylum");
 
+                    b.Property<string>("RecordType")
+                        .IsRequired()
+                        .HasColumnType("longtext")
+                        .HasColumnName("record_type");
+
                     b.HasKey("OccurrenceNo");
 
+                    b.HasIndex("EarlyIntervalNo");
+
                     b.ToTable("occurrences", "paleo");
+                });
+
+            modelBuilder.Entity("Backend.Models.Occurrence", b =>
+                {
+                    b.HasOne("Backend.Models.Interval", "Interval")
+                        .WithMany("Occurrences")
+                        .HasForeignKey("EarlyIntervalNo");
+
+                    b.Navigation("Interval");
+                });
+
+            modelBuilder.Entity("Backend.Models.Interval", b =>
+                {
+                    b.Navigation("Occurrences");
                 });
 #pragma warning restore 612, 618
         }

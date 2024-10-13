@@ -1,40 +1,134 @@
 ﻿@using Backend.Models
+@using Backend.Models.DTOs
+@using Microsoft.AspNetCore.Components
+@using BlazorBootstrap
+@using Frontend.Components.Pages
+@using Humanizer
+@inject HttpClient client
+@* @if (Intervals != null) *@
+@* { *@
 <div>
 
-    <select @onchange="OnIntervalSelected">
-        <option value="">Select interval</option>
+    <b>Filter:</b>
+    <div class="row">
+        <div class="col-md-5 col-sm-12">
+            @if (Intervals != null)
+            {
+            <AutoComplete
+                TItem="Interval"
+                @bind-Value="SelectedInterval"
+                DataProvider="AutoCompleteDataProvider"
+                PropertyName="IntervalName"
+                Placeholder="Search an Interval..."
+                OnChanged="((interval) => OnAutoCompleteChanged(interval))">
+            </AutoComplete>
+            }
+        </div>
+    </div>
+    <div class="row" style="border:1px solid black">
+        <b>Select Filter</b>
+        @* <b>Select Filter</b> *@
+        <select @bind:get="SelectedInterval" @bind:set="(e)=>onSelect(e)">
+          @foreach (var interval in Intervals)
+          {
+            <option value="@interval.IntervalName">@interval.IntervalName</option>
+          }
+        </select>
+        <b>Autocomplete</b>
         @if (Intervals != null)
         {
-            @foreach (var interval in Intervals)
-            {
-                
-                <option @onchange="@(e=> OnIntervalSelected(e))" value="@interval.IntervalName">@interval.IntervalName</option>
-                }
-                }
-    </select>
-</div>
+        @*     <AutoComplete *@
+        @*         Value="Bob" *@
+        @*     TItem="Interval" *@
+        @*     DataProvider="AutoCompleteDataProvider" *@
+        @*     LoadingText="Loading..." *@
+        @*     PropertyName="IntervalName" *@
+        @*     Placeholder="Search an Interval..." *@
+        @*     OnChanged="((interval) => OnAutoCompleteChanged(interval))"> *@
+        @* </AutoComplete> *@
+        }
+        @* <select  @onselect="@(e=>onSelect(e))" @onchange="@(OnIntervalSelected)"> *@
+        @*     @foreach(var interval in Intervals) *@
+        @*     {  *@
+        @*         <option *@
+        @*             value="@interval.IntervalName" *@
+        @*             > *@
+        @*                 @interval.IntervalName *@
+        @*         </option> *@
+        @*     } *@
+        @* </select> *@
+    </div>
 
-@if (selectedInterval != null)
-{
-    <!-- Display selected interval information -->
-    <p>Selected interval: @selectedInterval.IntervalName</p>
-}
+    </div>
+
+
+    <b>Filter Showing @Intervals.Count() Intervals</b>
+@* } *@
+@* { *@
+@* <b>No Intervals Found</b> *@
+@* } *@
+
+@* @if (selectedInterval != null) *@
+@* { *@
+@*     <!-- Display selected interval information --> *@
+@*     <p>Selected interval: @selectedInterval.IntervalName</p> *@
+@* } *@
 
 @code {
-    [Parameter]
-    public IEnumerable<Interval> Intervals { get; set; }
 
-    [Parameter]
-    public EventCallback<String> OnIntervalChanged { get; set; }
-    
-    private Interval selectedInterval; 
-    
-    
-    private async Task OnIntervalSelected(ChangeEventArgs e)
+    [Parameter] public IEnumerable<Interval> Intervals { get; set; } = new List<Interval>();
+
+    [Parameter] public EventCallback<String> OnIntervalChanged { get; set; }
+
+    public string SelectedInterval = "";
+    private bool isLoading = false;
+    private IEnumerable<Interval> IntervalsData = new List<Interval>();
+
+
+    public async Task<IQueryable<Interval>> FetchIntervals(HttpClient client)
     {
-        string selectedName = e.Value.ToString();
-        selectedInterval = Intervals.FirstOrDefault(i => i.IntervalName == selectedName);
-        OnIntervalChanged.InvokeAsync(selectedName);
-//        OnIntervalChanged.(OnIntervalChanged(selectedInterval.IntervalName));
+
+        Console.WriteLine("Fetching intervals from the server");
+        var intervals = await client.GetFromJsonAsync<Interval[]>("https://localhost:8443/api/interval?skip=0&limit=250&sortBy=interval_no&sortDir=ASC");
+        return intervals.AsQueryable();
+    }
+
+    public void onSelect(string intervalName)
+    {
+        SelectedInterval = intervalName;
+        OnIntervalChanged.InvokeAsync(SelectedInterval);
+    }
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        System.Console.WriteLine("Got " + Intervals.Count() + " intervals");
+        Intervals.Select(i => i.IntervalName).ToList().ForEach(i => System.Console.WriteLine(i));
+        //Intervals = await FetchIntervals(client);
+        //isLoading = true;
+        //[TODO] fix endpoints so they have the same pluralization and use the created httpClient registered in Program.cs
+    }
+
+    private Task OnAutoCompleteChanged(Interval interval)
+    {
+        string SelectedInterval = interval.IntervalName;
+
+        OnIntervalChanged.InvokeAsync();
+
+        return OnIntervalChanged.InvokeAsync(SelectedInterval);
+    }
+
+    private async Task<AutoCompleteDataProviderResult<Interval>> AutoCompleteDataProvider(AutoCompleteDataProviderRequest<Interval> request)
+    {
+        var filteredIntervals = Intervals
+            .Where(i => i.IntervalName != null && i.IntervalName.Contains("carnian"))
+            .ToList();
+
+        return await Task.FromResult(new AutoCompleteDataProviderResult<Interval>
+        {
+            Data = Intervals,
+            TotalCount = Intervals.Count()
+        });
     }
 }
+

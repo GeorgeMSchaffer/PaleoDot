@@ -49,14 +49,21 @@ namespace Backend.Controllers
         }
 
             [HttpGet("diversity/")]
-            public async Task<List<DiversityCountsDTO>> getDiversity()
+            public async Task<List<Diversity>> getDiversity([FromQuery] int skip = 0, [FromQuery] int limit = 50, [FromQuery] string? sortBy = "interval_name", [FromQuery] string? sortDir = "ASC")
             {
-                var diversity = await _service.getDiversity();
+                PaginationDTO pagination = new PaginationDTO()
+                {
+                    limit = limit,
+                    skip = skip,
+                    sortBy = sortBy,
+                    sortDir = sortDir
+                };
+                var diversity = await _service.getDiversity(pagination);
                 return diversity;
             }
             
             [HttpGet("diversity/{intervalName}/")]
-            public async Task<ActionResult<DiversityCountsDTO>>getDiversityByIntervalName(string intervalName)
+            public async Task<ActionResult<Diversity>>getDiversityByIntervalName(string intervalName)
             {
                 var diversity = await _service.getDiversityByIntervalName(intervalName);
                 return diversity;
@@ -65,19 +72,10 @@ namespace Backend.Controllers
         // GET: api/Interval/5
         [HttpGet("{id}")]
 
-        public async Task<List<OccurrenceDTO>> getOccurrencesByIntervalName(string intervalName,[FromQuery] int skip = 0, [FromQuery] int limit = 10, [FromQuery] string? sortBy = "interval_no", [FromQuery] string? sortDir = "ASC")
+        public async Task<OccurrenceDTO> findById(int id)
         {
-            PaginationDTO pagination = new PaginationDTO()
-            {
-                limit = limit,
-                skip = skip,
-                sortBy = sortBy,
-                sortDir = sortDir
-            };
-            if (pagination == null) throw new ArgumentNullException(nameof(pagination));
-
-            List<OccurrenceDTO> occurrences = await _service.GetOccurrencesByIntervalName(intervalName, pagination);
-            return occurrences;
+            var occurrence = await _service.Get(id);
+            return occurrence;
         }
         
         

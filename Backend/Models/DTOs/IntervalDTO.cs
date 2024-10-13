@@ -7,14 +7,15 @@ namespace Backend.Models;
 [Table("intervals")]
 public class IntervalDTO
 {
-    public int intervalNo { get; set; }
-    public String? recordType { get; set; }
-    public String? intervalName { get; set; }
-    public String? abbrev { get; set; }
-    public String? type { get; set; }
-    public int? parentNo { get; set; }
-    public String? color { get; set; }
-    public Decimal? tAge { get; set; }
-    public Decimal? bAge { get; set; }
+    public int IntervalNo { get; set; }
+    public String? RecordType { get; set; }
+    public String? IntervalName { get; set; }
+    public String? Abbrev { get; set; }
+    public String? Type { get; set; }
+    public int? ParentNo { get; set; }
+    public String? Color { get; set; }
+    public int? MinMya { get; set; }
+    public int? MaxMYA { get; set; }
     public int? referenceNo { get; set; }
+    public int? ScaleNo { get; set; }
 }

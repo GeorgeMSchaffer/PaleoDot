@@ -49,6 +49,25 @@ namespace Backend.Controllers
             }
             return Ok(intervalDTOs);
         }
+        
+        [HttpGet("occurrencces/{intervalName}")]
+        public async Task<ActionResult<List<IntervalDTO>>> GetIntervalOccurrences([FromQuery] int skip = 0, [FromQuery] int limit = 10, [FromQuery] string? sortBy = "interval_no", [FromQuery] string? sortDir = "ASC", string intervalName = "Carnian")
+        {
+            PaginationDTO pagination = new PaginationDTO()
+            {
+                limit = limit,
+                skip = skip,
+                sortBy = sortBy,
+                sortDir = sortDir
+            };
+            var intervalDTOs =  _service.getIntervalOccurrences(intervalName, pagination);
+            if(intervalDTOs == null)
+            {
+                return NotFound();
+            }
+            return Ok(intervalDTOs);
+        }
+        
         // GET: api/Interval/5
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status404NotFound)]

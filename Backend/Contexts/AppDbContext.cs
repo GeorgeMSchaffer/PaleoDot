@@ -28,11 +28,22 @@ public class AppDbContext : DbContext
 
     public DbSet<Interval> Intervals => Set<Interval>();
     public DbSet<Occurrence> Occurrences => Set<Occurrence>();
+    
+    
   //  public DbSet<Species> Species => Set<Species>();
    // public DbSet<Taxa> Taxas => Set<Taxa>();
-
-    protected override void OnModelCreating(ModelBuilder modelBuilder)
-    {
+   protected override void OnModelCreating(ModelBuilder modelBuilder)
+   {
+       modelBuilder.Entity<Occurrence>()
+           .HasOne(o => o.Interval)
+           .WithMany(i => i.Occurrences)
+           .HasForeignKey(o => o.EarlyIntervalNo)
+           .HasPrincipalKey(i => i.IntervalNo);
+       
+       base.OnModelCreating(modelBuilder);
+   }
+    // protected override void OnModelCreating(ModelBuilder modelBuilder)
+    // {
 //         var occurrencesJSON = System.IO.File.ReadAllText("Data/carnian-occurrences.json");
 //         var intervals = System.IO.File.ReadAllText("Data/intervals.json");
 //        // var deserializedOccurrences = JsonSerializer.Deserialize<List<Occurrence>>(occurrences);
@@ -70,8 +81,8 @@ public class AppDbContext : DbContext
 
         // modelBuilder.Entity<Species>()
         //     .HasMany(s => s.OccurrenceNo)
-        base.OnModelCreating(modelBuilder);
-
-    }
+    //     base.OnModelCreating(modelBuilder);
+    //
+    // }
 
 }

@@ -29,7 +29,8 @@ namespace Backend.Models
         public string? IntervalName { get; set; }
         // [ForeignKey("interval_name")]
  //       [ForeignKey("EarlyIntervalNo")]
-        //public List<Occurrence> Occurrences { get; set; }
+        public IEnumerable<Occurrence> Occurrences { get; set; } = new List<Occurrence>();
+
         
         [Column("min_ma")]
         [JsonPropertyName("min_ma")]

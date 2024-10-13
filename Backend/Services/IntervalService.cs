@@ -33,6 +33,21 @@ public class IntervalService : IIntervalService{
         var intervalDTOs = _mapper.Map<List<IntervalDTO>>(intervals);
         return intervalDTOs;
     }
+    
+    public List<IntervalDTO> getIntervalOccurrences(string intervalName, PaginationDTO pagination)
+    {
+        var intervals = _context.Intervals
+            .Include(i => i.Occurrences)
+            .OrderBy(i=>i.IntervalName)
+            .Where(i => i.IntervalName == intervalName)
+            
+            .Skip(pagination.skip)
+            .Take(pagination.limit)
+            .ToList();
+
+        var intervalDTOs = _mapper.Map<List<IntervalDTO>>(intervals);
+        return intervalDTOs;
+    }
     // public async Task<List<OccurrenceDTO>> getOccurrencesByIntervalName(string intervalName,Pagination pagination)
     // {
     //     var intervals =  await _context.Intervals

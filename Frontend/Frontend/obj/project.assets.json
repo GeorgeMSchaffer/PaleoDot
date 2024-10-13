@@ -80,6 +80,37 @@
           "buildMultiTargeting/Blazor.Bootstrap.props": {}
         }
       },
+      "BlazorFluentUI.CoreComponents/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "8.0.0-rc.2.23480.2",
+          "System.Reactive": "6.0.0"
+        },
+        "compile": {
+          "lib/net8.0/BlazorFluentUI.CoreComponents.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/BlazorFluentUI.CoreComponents.dll": {}
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0/Icon/FluentSystemIcons-Filled.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net8.0/Icon/FluentSystemIcons-Regular.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/BlazorFluentUI.CoreComponents.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/BlazorFluentUI.CoreComponents.props": {}
+        }
+      },
       "bootstrap/5.3.3": {
         "type": "package",
         "contentFiles": {
@@ -316,6 +347,37 @@
           "lib/net6.0/BouncyCastle.Cryptography.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "ChartJs.Blazor/1.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "3.1.0",
+          "Microsoft.CSharp": "4.7.0",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.1/ChartJs.Blazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/ChartJs.Blazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/netstandard2.1/Properties/launchSettings.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/ChartJs.Blazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/ChartJs.Blazor.props": {}
         }
       },
       "Google.Protobuf/3.26.1": {
@@ -1686,7 +1748,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -2194,6 +2256,38 @@
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Localization/8.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.1",
+          "Microsoft.Extensions.Localization.Abstractions": "8.0.8",
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.1",
+          "Microsoft.Extensions.Options": "8.0.2"
+        },
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Localization.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Localization.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Localization.Abstractions/8.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Extensions.Localization.Abstractions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.Logging/8.0.1": {
@@ -2735,6 +2829,31 @@
           "lib/netcoreapp3.1/Mono.TextTemplating.dll": {}
         }
       },
+      "MudBlazor/7.9.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components": "8.0.8",
+          "Microsoft.AspNetCore.Components.Web": "8.0.8",
+          "Microsoft.Extensions.Localization": "8.0.8"
+        },
+        "compile": {
+          "lib/net8.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/MudBlazor.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/MudBlazor.targets": {},
+          "buildTransitive/MudBlazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/MudBlazor.props": {}
+        }
+      },
       "MySql.Data/9.0.0": {
         "type": "package",
         "dependencies": {
@@ -2972,6 +3091,40 @@
         },
         "runtime": {
           "lib/netstandard2.0/NuGet.Versioning.dll": {}
+        }
+      },
+      "PSC.Blazor.Components.Chartjs/8.0.8": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Components.Web": "8.0.6"
+        },
+        "compile": {
+          "lib/net8.0/PSC.Blazor.Components.Chartjs.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/PSC.Blazor.Components.Chartjs.dll": {
+            "related": ".xml"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/net8.0/libman.json": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          },
+          "contentFiles/any/net8.0/psc_ico.ico": {
+            "buildAction": "Content",
+            "codeLanguage": "any",
+            "copyToOutput": false
+          }
+        },
+        "build": {
+          "buildTransitive/PSC.Blazor.Components.Chartjs.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/PSC.Blazor.Components.Chartjs.props": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -4068,6 +4221,22 @@
           "lib/netstandard1.3/System.ObjectModel.dll": {}
         }
       },
+      "System.Reactive/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Reactive.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "System.Reflection/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -5098,6 +5267,43 @@
         "staticwebassets/pdfjs-4.0.379.worker.min.js"
       ]
     },
+    "BlazorFluentUI.CoreComponents/8.0.0": {
+      "sha512": "OO7YgXJ6FoG6SBVI4arWXfPrxSZ3kzaiUQURmQt4xZJYwOI6P7gmJbhR2VXZqfpHL65Ux16B6v/dcpYDYLx09w==",
+      "type": "package",
+      "path": "blazorfluentui.corecomponents/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "blazorfluentui.corecomponents.8.0.0.nupkg.sha512",
+        "blazorfluentui.corecomponents.nuspec",
+        "build/BlazorFluentUI.CoreComponents.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/BlazorFluentUI.CoreComponents.props",
+        "buildTransitive/BlazorFluentUI.CoreComponents.props",
+        "content/Icon/FluentSystemIcons-Filled.json",
+        "content/Icon/FluentSystemIcons-Regular.json",
+        "contentFiles/any/net8.0/Icon/FluentSystemIcons-Filled.json",
+        "contentFiles/any/net8.0/Icon/FluentSystemIcons-Regular.json",
+        "lib/net8.0/BlazorFluentUI.CoreComponents.dll",
+        "staticwebassets/BlazorFluentUI.CoreComponents.bundle.scp.css",
+        "staticwebassets/FluentSystemIcons-Filled.ttf",
+        "staticwebassets/FluentSystemIcons-Regular.ttf",
+        "staticwebassets/baseComponent.js",
+        "staticwebassets/callout.js",
+        "staticwebassets/detailsList.js",
+        "staticwebassets/documentCard.js",
+        "staticwebassets/fluent-system-icons-filled.css",
+        "staticwebassets/fluent-system-icons-regular.css",
+        "staticwebassets/focusTrapZone.js",
+        "staticwebassets/focusZone.js",
+        "staticwebassets/list.js",
+        "staticwebassets/marqueeSelection.js",
+        "staticwebassets/richTextEditor.js",
+        "staticwebassets/selectionZone.js",
+        "staticwebassets/slider.js"
+      ]
+    },
     "bootstrap/5.3.3": {
       "sha512": "iQohLXwneNPDyW4x24mKQ90qGwT5WTtNl3KybL0koTluJPjKYxFCU/NTLHsJiWR2n7VmnwcpAgr8TR42KNmPOg==",
       "type": "package",
@@ -5216,6 +5422,36 @@
         "lib/netstandard2.0/BouncyCastle.Cryptography.dll",
         "lib/netstandard2.0/BouncyCastle.Cryptography.xml",
         "packageIcon.png"
+      ]
+    },
+    "ChartJs.Blazor/1.1.0": {
+      "sha512": "MUGYzS5FSx9r17sPVRlREPWU+1mFtggFaQtGKifQg30I48tx3OEDH3JZd07r+jKwtpN/h89HVUYy3IT2FS8ZEw==",
+      "type": "package",
+      "path": "chartjs.blazor/1.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/ChartJs.Blazor.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/ChartJs.Blazor.props",
+        "buildTransitive/ChartJs.Blazor.props",
+        "chartjs.blazor.1.1.0.nupkg.sha512",
+        "chartjs.blazor.nuspec",
+        "content/Properties/launchSettings.json",
+        "contentFiles/any/netstandard2.1/Properties/launchSettings.json",
+        "lib/netstandard2.1/ChartJs.Blazor.dll",
+        "lib/netstandard2.1/ChartJs.Blazor.xml",
+        "staticwebassets/Chart.min.js",
+        "staticwebassets/ChartJSBlazor.css",
+        "staticwebassets/ChartJsBlazorInterop.js",
+        "staticwebassets/ChartJsBlazorInterop.js.map",
+        "staticwebassets/moment-with-locales.min.js",
+        "staticwebassets/ts/ChartJsBlazorInterop.ts",
+        "staticwebassets/ts/ChartJsInterop.ts",
+        "staticwebassets/ts/MomentJsInterop.ts",
+        "staticwebassets/ts/types/Chart.min.d.ts",
+        "staticwebassets/ts/types/moment.d.ts",
+        "staticwebassets/tsconfig.json"
       ]
     },
     "Google.Protobuf/3.26.1": {
@@ -7405,10 +7641,10 @@
         "microsoft.codeanalysis.workspaces.common.nuspec"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -7421,6 +7657,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -7430,7 +7667,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -8353,6 +8590,44 @@
         "microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",
         "microsoft.extensions.filesystemglobbing.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Localization/8.0.8": {
+      "sha512": "n32ZGmc2UOv9R/xsBHQPOxBsqCSAAJSoMtFqoQ8zOegB2P+H6+773OyCWg4jRBkO/3dmCyBJXB0yLAOVW2/C/w==",
+      "type": "package",
+      "path": "microsoft.extensions.localization/8.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.Extensions.Localization.dll",
+        "lib/net462/Microsoft.Extensions.Localization.xml",
+        "lib/net8.0/Microsoft.Extensions.Localization.dll",
+        "lib/net8.0/Microsoft.Extensions.Localization.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.xml",
+        "microsoft.extensions.localization.8.0.8.nupkg.sha512",
+        "microsoft.extensions.localization.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Localization.Abstractions/8.0.8": {
+      "sha512": "WYIsqP/A6dH/LWJznrvgoNPc7Q+CUJD0E78765GL3aonBtyFK1BKtPzBvvlnrr3SVqSO2r6xJCLgCEiCMG1gfA==",
+      "type": "package",
+      "path": "microsoft.extensions.localization.abstractions/8.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net462/Microsoft.Extensions.Localization.Abstractions.dll",
+        "lib/net462/Microsoft.Extensions.Localization.Abstractions.xml",
+        "lib/net8.0/Microsoft.Extensions.Localization.Abstractions.dll",
+        "lib/net8.0/Microsoft.Extensions.Localization.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Localization.Abstractions.xml",
+        "microsoft.extensions.localization.abstractions.8.0.8.nupkg.sha512",
+        "microsoft.extensions.localization.abstractions.nuspec"
       ]
     },
     "Microsoft.Extensions.Logging/8.0.1": {
@@ -9509,6 +9784,32 @@
         "readme.md"
       ]
     },
+    "MudBlazor/7.9.0": {
+      "sha512": "/u8yM3GhgDH7x/0ni7jvI1FTPYttBEN9aAoeIT/Qoyn5jXGmP0lKMIdaAFJzw6/oBeH0E9jCQIfaMwx7v5LZRQ==",
+      "type": "package",
+      "path": "mudblazor/7.9.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "Nuget.png",
+        "README.md",
+        "analyzers/dotnet/cs/MudBlazor.Analyzers.dll",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/MudBlazor.props",
+        "build/MudBlazor.targets",
+        "buildMultiTargeting/MudBlazor.props",
+        "buildTransitive/MudBlazor.props",
+        "lib/net7.0/MudBlazor.dll",
+        "lib/net7.0/MudBlazor.xml",
+        "lib/net8.0/MudBlazor.dll",
+        "lib/net8.0/MudBlazor.xml",
+        "mudblazor.7.9.0.nupkg.sha512",
+        "mudblazor.nuspec",
+        "staticwebassets/MudBlazor.min.css",
+        "staticwebassets/MudBlazor.min.js"
+      ]
+    },
     "MySql.Data/9.0.0": {
       "sha512": "YT2/fdDy3FBx5ZK0qsupEs9Gt0iFo/mZR+ND5cJwrr+6xguAOXyYpYUbEj27UcLZER5InOUrJQYyUaPIDil2Xw==",
       "type": "package",
@@ -9736,6 +10037,164 @@
         "lib/netstandard2.0/NuGet.Versioning.dll",
         "nuget.versioning.6.11.0.nupkg.sha512",
         "nuget.versioning.nuspec"
+      ]
+    },
+    "PSC.Blazor.Components.Chartjs/8.0.8": {
+      "sha512": "N5P5DaddtBmmdpd96t3PQ2td9VUmTZM0VjMWBAuApJGS6QWjwAavRaKZ/jwcuQVk8uajf1/DmR3lWjyAFABtAQ==",
+      "type": "package",
+      "path": "psc.blazor.components.chartjs/8.0.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "build/PSC.Blazor.Components.Chartjs.props",
+        "buildMultiTargeting/PSC.Blazor.Components.Chartjs.props",
+        "buildTransitive/PSC.Blazor.Components.Chartjs.props",
+        "content/libman.json",
+        "content/psc_ico.ico",
+        "contentFiles/any/net8.0/libman.json",
+        "contentFiles/any/net8.0/psc_ico.ico",
+        "lib/net8.0/PSC.Blazor.Components.Chartjs.dll",
+        "lib/net8.0/PSC.Blazor.Components.Chartjs.xml",
+        "psc.blazor.components.chartjs.8.0.8.nupkg.sha512",
+        "psc.blazor.components.chartjs.nuspec",
+        "psc_logo.png",
+        "staticwebassets/Chart.js",
+        "staticwebassets/PSC.Blazor.Components.Chartjs.bundle.scp.css",
+        "staticwebassets/lib/Chart.js/chart.cjs",
+        "staticwebassets/lib/Chart.js/chart.cjs.map",
+        "staticwebassets/lib/Chart.js/chart.esm.js",
+        "staticwebassets/lib/Chart.js/chart.esm.min.js",
+        "staticwebassets/lib/Chart.js/chart.js",
+        "staticwebassets/lib/Chart.js/chart.js.map",
+        "staticwebassets/lib/Chart.js/chart.min.js",
+        "staticwebassets/lib/Chart.js/chart.mjs",
+        "staticwebassets/lib/Chart.js/chart.umd.js",
+        "staticwebassets/lib/Chart.js/chart.umd.js.map",
+        "staticwebassets/lib/Chart.js/chunks/helpers.segment.cjs",
+        "staticwebassets/lib/Chart.js/chunks/helpers.segment.cjs.map",
+        "staticwebassets/lib/Chart.js/chunks/helpers.segment.js",
+        "staticwebassets/lib/Chart.js/chunks/helpers.segment.js.map",
+        "staticwebassets/lib/Chart.js/controllers/controller.bar.d.ts",
+        "staticwebassets/lib/Chart.js/controllers/controller.bubble.d.ts",
+        "staticwebassets/lib/Chart.js/controllers/controller.doughnut.d.ts",
+        "staticwebassets/lib/Chart.js/controllers/controller.line.d.ts",
+        "staticwebassets/lib/Chart.js/controllers/controller.pie.d.ts",
+        "staticwebassets/lib/Chart.js/controllers/controller.polarArea.d.ts",
+        "staticwebassets/lib/Chart.js/controllers/controller.radar.d.ts",
+        "staticwebassets/lib/Chart.js/controllers/controller.scatter.d.ts",
+        "staticwebassets/lib/Chart.js/controllers/index.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.adapters.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.animation.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.animations.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.animations.defaults.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.animator.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.config.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.controller.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.datasetController.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.defaults.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.element.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.interaction.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.layouts.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.layouts.defaults.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.plugins.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.registry.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.scale.autoskip.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.scale.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.scale.defaults.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.ticks.d.ts",
+        "staticwebassets/lib/Chart.js/core/core.typedRegistry.d.ts",
+        "staticwebassets/lib/Chart.js/core/index.d.ts",
+        "staticwebassets/lib/Chart.js/elements/element.arc.d.ts",
+        "staticwebassets/lib/Chart.js/elements/element.bar.d.ts",
+        "staticwebassets/lib/Chart.js/elements/element.line.d.ts",
+        "staticwebassets/lib/Chart.js/elements/element.point.d.ts",
+        "staticwebassets/lib/Chart.js/elements/index.d.ts",
+        "staticwebassets/lib/Chart.js/helpers.cjs",
+        "staticwebassets/lib/Chart.js/helpers.cjs.map",
+        "staticwebassets/lib/Chart.js/helpers.esm.js",
+        "staticwebassets/lib/Chart.js/helpers.esm.min.js",
+        "staticwebassets/lib/Chart.js/helpers.js",
+        "staticwebassets/lib/Chart.js/helpers.js.map",
+        "staticwebassets/lib/Chart.js/helpers.mjs",
+        "staticwebassets/lib/Chart.js/helpers/helpers.canvas.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/helpers.collection.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/helpers.color.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/helpers.config.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/helpers.config.types.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/helpers.core.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/helpers.curve.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/helpers.dom.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/helpers.easing.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/helpers.extras.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/helpers.interpolation.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/helpers.intl.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/helpers.math.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/helpers.options.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/helpers.rtl.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/helpers.segment.d.ts",
+        "staticwebassets/lib/Chart.js/helpers/index.d.ts",
+        "staticwebassets/lib/Chart.js/index.d.ts",
+        "staticwebassets/lib/Chart.js/index.umd.d.ts",
+        "staticwebassets/lib/Chart.js/platform/index.d.ts",
+        "staticwebassets/lib/Chart.js/platform/platform.base.d.ts",
+        "staticwebassets/lib/Chart.js/platform/platform.basic.d.ts",
+        "staticwebassets/lib/Chart.js/platform/platform.dom.d.ts",
+        "staticwebassets/lib/Chart.js/plugins/index.d.ts",
+        "staticwebassets/lib/Chart.js/plugins/plugin.colors.d.ts",
+        "staticwebassets/lib/Chart.js/plugins/plugin.decimation.d.ts",
+        "staticwebassets/lib/Chart.js/plugins/plugin.filler/filler.drawing.d.ts",
+        "staticwebassets/lib/Chart.js/plugins/plugin.filler/filler.helper.d.ts",
+        "staticwebassets/lib/Chart.js/plugins/plugin.filler/filler.options.d.ts",
+        "staticwebassets/lib/Chart.js/plugins/plugin.filler/filler.segment.d.ts",
+        "staticwebassets/lib/Chart.js/plugins/plugin.filler/filler.target.d.ts",
+        "staticwebassets/lib/Chart.js/plugins/plugin.filler/filler.target.stack.d.ts",
+        "staticwebassets/lib/Chart.js/plugins/plugin.filler/index.d.ts",
+        "staticwebassets/lib/Chart.js/plugins/plugin.filler/simpleArc.d.ts",
+        "staticwebassets/lib/Chart.js/plugins/plugin.legend.d.ts",
+        "staticwebassets/lib/Chart.js/plugins/plugin.subtitle.d.ts",
+        "staticwebassets/lib/Chart.js/plugins/plugin.title.d.ts",
+        "staticwebassets/lib/Chart.js/plugins/plugin.tooltip.d.ts",
+        "staticwebassets/lib/Chart.js/scales/index.d.ts",
+        "staticwebassets/lib/Chart.js/scales/scale.category.d.ts",
+        "staticwebassets/lib/Chart.js/scales/scale.linear.d.ts",
+        "staticwebassets/lib/Chart.js/scales/scale.linearbase.d.ts",
+        "staticwebassets/lib/Chart.js/scales/scale.logarithmic.d.ts",
+        "staticwebassets/lib/Chart.js/scales/scale.radialLinear.d.ts",
+        "staticwebassets/lib/Chart.js/scales/scale.time.d.ts",
+        "staticwebassets/lib/Chart.js/scales/scale.timeseries.d.ts",
+        "staticwebassets/lib/Chart.js/types.d.ts",
+        "staticwebassets/lib/Chart.js/types/animation.d.ts",
+        "staticwebassets/lib/Chart.js/types/basic.d.ts",
+        "staticwebassets/lib/Chart.js/types/color.d.ts",
+        "staticwebassets/lib/Chart.js/types/geometric.d.ts",
+        "staticwebassets/lib/Chart.js/types/index.d.ts",
+        "staticwebassets/lib/Chart.js/types/layout.d.ts",
+        "staticwebassets/lib/Chart.js/types/utils.d.ts",
+        "staticwebassets/lib/chartjs-adapter-moment/chartjs-adapter-moment.esm.js",
+        "staticwebassets/lib/chartjs-adapter-moment/chartjs-adapter-moment.esm.min.js",
+        "staticwebassets/lib/chartjs-adapter-moment/chartjs-adapter-moment.js",
+        "staticwebassets/lib/chartjs-adapter-moment/chartjs-adapter-moment.min.js",
+        "staticwebassets/lib/chartjs-plugin-autocolors/chartjs-plugin-autocolors.cjs",
+        "staticwebassets/lib/chartjs-plugin-autocolors/chartjs-plugin-autocolors.cjs.map",
+        "staticwebassets/lib/chartjs-plugin-autocolors/chartjs-plugin-autocolors.esm.js",
+        "staticwebassets/lib/chartjs-plugin-autocolors/chartjs-plugin-autocolors.esm.js.map",
+        "staticwebassets/lib/chartjs-plugin-autocolors/chartjs-plugin-autocolors.min.js",
+        "staticwebassets/lib/chartjs-plugin-autocolors/chartjs-plugin-autocolors.min.js.map",
+        "staticwebassets/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.esm.js",
+        "staticwebassets/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.esm.min.js",
+        "staticwebassets/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.js",
+        "staticwebassets/lib/chartjs-plugin-datalabels/chartjs-plugin-datalabels.min.js",
+        "staticwebassets/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.esm.js",
+        "staticwebassets/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.esm.min.js",
+        "staticwebassets/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.js",
+        "staticwebassets/lib/chartjs-plugin-zoom/chartjs-plugin-zoom.min.js",
+        "staticwebassets/lib/hammer.js/hammer.js",
+        "staticwebassets/lib/hammer.js/hammer.min.js",
+        "staticwebassets/lib/hammer.js/hammer.min.js.map",
+        "staticwebassets/lib/hammer.js/hammer.min.map"
       ]
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.0": {
@@ -11978,6 +12437,34 @@
         "ref/xamarinwatchos10/_._",
         "system.objectmodel.4.3.0.nupkg.sha512",
         "system.objectmodel.nuspec"
+      ]
+    },
+    "System.Reactive/6.0.0": {
+      "sha512": "31kfaW4ZupZzPsI5PVe77VhnvFF55qgma7KZr/E0iFTs6fmdhhG8j0mgEx620iLTey1EynOkEfnyTjtNEpJzGw==",
+      "type": "package",
+      "path": "system.reactive/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/net6.0-windows10.0.19041/_._",
+        "build/net6.0/_._",
+        "buildTransitive/net6.0-windows10.0.19041/_._",
+        "buildTransitive/net6.0/_._",
+        "icon.png",
+        "lib/net472/System.Reactive.dll",
+        "lib/net472/System.Reactive.xml",
+        "lib/net6.0-windows10.0.19041/System.Reactive.dll",
+        "lib/net6.0-windows10.0.19041/System.Reactive.xml",
+        "lib/net6.0/System.Reactive.dll",
+        "lib/net6.0/System.Reactive.xml",
+        "lib/netstandard2.0/System.Reactive.dll",
+        "lib/netstandard2.0/System.Reactive.xml",
+        "lib/uap10.0.18362/System.Reactive.dll",
+        "lib/uap10.0.18362/System.Reactive.pri",
+        "lib/uap10.0.18362/System.Reactive.xml",
+        "readme.md",
+        "system.reactive.6.0.0.nupkg.sha512",
+        "system.reactive.nuspec"
       ]
     },
     "System.Reflection/4.3.0": {
@@ -14320,10 +14807,14 @@
     "net8.0": [
       "Backend >= 1.0.0",
       "Blazor.Bootstrap >= 3.0.0",
+      "BlazorFluentUI.CoreComponents >= 8.0.0",
+      "ChartJs.Blazor >= 1.1.0",
       "Frontend.Client >= 1.0.0",
       "Microsoft.AspNetCore.Components.QuickGrid >= 8.0.10",
       "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter >= 8.0.10",
       "Microsoft.AspNetCore.Components.WebAssembly.Server >= 8.0.8",
+      "MudBlazor >= 7.9.0",
+      "PSC.Blazor.Components.Chartjs >= 8.0.8",
       "bootstrap >= 5.3.3"
     ]
   },
@@ -14384,6 +14875,14 @@
             "target": "Package",
             "version": "[3.0.0, )"
           },
+          "BlazorFluentUI.CoreComponents": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "ChartJs.Blazor": {
+            "target": "Package",
+            "version": "[1.1.0, )"
+          },
           "Microsoft.AspNetCore.Components.QuickGrid": {
             "target": "Package",
             "version": "[8.0.10, )"
@@ -14393,6 +14892,14 @@
             "version": "[8.0.10, )"
           },
           "Microsoft.AspNetCore.Components.WebAssembly.Server": {
+            "target": "Package",
+            "version": "[8.0.8, )"
+          },
+          "MudBlazor": {
+            "target": "Package",
+            "version": "[7.9.0, )"
+          },
+          "PSC.Blazor.Components.Chartjs": {
             "target": "Package",
             "version": "[8.0.8, )"
           },
@@ -14499,6 +15006,16 @@
       "warningLevel": 1,
       "message": "Package 'System.Net.Http' 4.3.0 has a known high severity vulnerability, https://github.com/advisories/GHSA-7jgj-8wvc-jh57",
       "libraryId": "System.Net.Http",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1903",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'System.Text.Json' 8.0.4 has a known high severity vulnerability, https://github.com/advisories/GHSA-8g4q-xg66-9fp4",
+      "libraryId": "System.Text.Json",
       "targetGraphs": [
         "net8.0"
       ]

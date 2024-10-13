@@ -1,0 +1,218 @@
+﻿@page "/Diversity"
+@inject HttpClient client
+@using System.Drawing
+@using Backend.Models.DTOs
+@using Backend.Models
+@using Microsoft.AspNetCore.Components.QuickGrid
+@using Newtonsoft.Json
+@using NuGet.Protocol
+@using System.Linq
+@using System.Runtime.InteropServices.JavaScript
+@using Microsoft.EntityFrameworkCore
+@using Microsoft.EntityFrameworkCore.Query.Internal
+@using SortDirection = Microsoft.AspNetCore.Components.QuickGrid.SortDirection
+@using ChartJs.Blazor.Charts
+@using ChartJs.Blazor.ChartJS.Common
+@using ChartJs.Blazor.ChartJS.BarChart
+@using ChartJs.Blazor.ChartJS.Common.Properties
+@using ChartJs.Blazor.ChartJS.PieChart
+@using Scales = PSC.Blazor.Components.Chartjs.Models.Common.Scales
+@using ChartJs.Blazor.Util
+@rendermode InteractiveServer
+
+<h3>Diversity</h3>
+<div>
+  @if(ErrorMessage != null && ErrorMessage.Length > 0)
+  {
+    <p role="alert" class="blazor-error-boundary">
+      @ErrorMessage
+    </p>
+  }
+</div>
+<b>Select Filter here</b>
+@if(Intervals != null)
+{
+  <IntervalSelectFilter 
+    OnIntervalChanged="OnIntervalFilterChanged" 
+    intervals="Intervals"
+  />
+}
+
+@if(SelectedInterval != null)
+{
+  <p>Selected interval: @SelectedInterval</p>
+}
+<h2>Diversity by Interval</h2>
+@if(Diversities != null)
+{
+  <div>
+    <p>Showing Diversity for @Diversities.Count() Intervals</p>
+  </div>
+  <Chart Config="_config1" @ref="_chart1"></Chart>
+  
+  <QuickGrid ItemKey="(d)=>d.intervalName" 
+             TGridItem="DiversityDTO" 
+             Items="Diversities" 
+             Virtualize="true"
+             ItemSize="Single.MaxValue"
+             Pagination="PaginationState">
+    <PropertyColumn Property="@(i => i.intervalName )" 
+          Align="Microsoft.AspNetCore.Components.QuickGrid.Align.Center" 
+          InitialSortDirection="SortDirection.Ascending"
+          Title="Interval Name" 
+          Sortable="true"
+    ></PropertyColumn>
+    <PropertyColumn Property="@(d => d.minMya)"
+                    Sortable="true"
+                    Title="Min MYA"
+    ></PropertyColumn>
+    <PropertyColumn Property="@(d => d.maxMya)"
+                    Sortable="true"
+                    Title="Max MYA"
+    ></PropertyColumn>    
+    <PropertyColumn Property="@(i => i.CountOfClasses)" 
+        Sortable="true" 
+        Title="Unique Classes"/>
+    <PropertyColumn Property="@(i => i.CountOfGenera)" Sortable="true" Title="Unique Genera"/>
+    <PropertyColumn Property="@(i => i.CountOfOrders)" Sortable="true" Title="Unique Orders"></PropertyColumn>
+    <PropertyColumn Property="@(i=> i.CountOfPhylum)" Sortable="true" Title="Unique Phyla"></PropertyColumn>
+    <PropertyColumn Property="@(i=>i.CountOfOccurrences)" Sortable="true" Title="Total Occurrences"></PropertyColumn>
+  </QuickGrid>
+}
+
+@code {
+  private IQueryable<DiversityDTO> Diversities;
+  private Boolean IsLoading = false;
+  private string SelectedInterval = "";
+  private string ErrorMessage = "";
+  private IQueryable<Interval> Intervals;
+  private PaginationState PaginationState = new PaginationState();
+  private BarChart barChart = default!;
+  private BarChartOptions barChartOptions = default!;
+  private ChartData chartData = default!;
+  private List<IChartDataset> datasets = new List<IChartDataset>();
+  private BarConfig _config;
+  private BarChartConfig _config1;
+  private Chart? _chart1;
+
+  public async Task<IQueryable<DiversityDTO>> FetchDiversities(HttpClient client)
+  {
+    Console.WriteLine("Fetching intervals from the server");
+    var diversity = await client.GetFromJsonAsync<List<DiversityDTO>>
+      ("https://localhost:8443/api/Occurrence/diversity/");
+    System.Console.WriteLine("Retrieved " + diversity.Count() + " diversity counts from the server");
+    return diversity.AsQueryable();
+  }
+
+  public async Task<IQueryable<Interval>> FetchIntervals(HttpClient client)
+  {
+    Console.WriteLine("Fetching intervals from the server");
+    var intervals = await client.GetFromJsonAsync<Interval[]>
+      ("https://localhost:8443/api/interval?skip=0&limit=1000&sortBy=interval_no&sortDir=ASC");
+    return intervals.AsQueryable();
+  }
+
+  private async Task OnIntervalFilterChanged(string intervalName)
+  {
+    if (intervalName != null)
+    {
+      SelectedInterval = intervalName;
+      var filtered = Diversities.Where(d => d.intervalName == intervalName);
+      System.Console.WriteLine("Filtered " + filtered.Count() + " intervals. From " + Diversities.Count() + " intervals");
+      Diversities = filtered.AsQueryable();
+    }
+    else
+    {
+      System.Console.WriteLine($"No interval name was received from the filter");
+    }
+  }
+
+  protected override async Task OnInitializedAsync()
+  {
+    try
+    {
+      IsLoading = true;
+      Diversities = await FetchDiversities(client);
+      Intervals = await FetchIntervals(client);
+
+      
+
+      var lables = Diversities.Select(d => d.intervalName).ToList();
+      _config1 = new BarChartConfig()
+      {
+        Options = new Options()
+        {
+          Responsive = true,
+          MaintainAspectRatio = false,
+          Plugins = new Plugins()
+          {
+            Legend = new Legend()
+            {
+              // Align = LegendAlign.Center,
+              Display = false,
+              Position = LegendPosition.Right
+            }
+          },
+          Scales = new Dictionary<string, Axis>()
+          {
+            {
+              Scales.XAxisId, new Axis()
+              {
+                Stacked = true,
+                Ticks = new Ticks()
+                {
+                  MaxRotation = 0,
+                  MinRotation = 0
+                }
+              }
+            },
+            {
+              Scales.YAxisId, new Axis()
+              {
+                Stacked = true
+              }
+            }
+          }
+        }
+      };
+
+      if(SelectedInterval != null)
+      {
+        Diversities = Diversities.Where(d => d.intervalName == SelectedInterval);
+      }
+      decimal?[] values = Diversities.Select(d=>(Decimal?)d.CountOfGenera).ToArray();
+      _config1.Data.Labels = Diversities.Select(d=>d.intervalName).ToList();
+        var ds = new BarDataset
+        {
+//          values = Diversities.Select(d => d.CountOfOccurrences).ToList(),
+          Label = "Intervals",
+          BorderWidth = 1,
+          BackgroundColor = Diversities.Select(d=>d.color).Where(d=> d != "").ToList(),
+          Data = new List<decimal?>(values) //Diversities.Select(d => d.CountOfOccurrences).ToList().Cast<decimal?>().ToList()
+        };
+       // var data = Diversities.Select(d => d.CountOfOccurrences).ToList();
+       // ds.Data = data.Cast<decimal?>().ToList();
+       _config1.Data.Labels = lables;
+        _config1.Data.Datasets.Add(ds);
+
+      }
+    catch (Exception e)
+    {
+      ErrorMessage = e.Message;
+    }
+    finally
+    {
+      IsLoading = false;
+    }
+  }
+
+  public void OnAutoCompleteChanged(Interval interval)
+  {
+    SelectedInterval = interval.IntervalName;
+  }
+
+  public void onItemChanged(string intervalName)
+  {
+    SelectedInterval = intervalName;
+  }
+}

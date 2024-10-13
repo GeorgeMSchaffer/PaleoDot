@@ -16,7 +16,7 @@ public interface IOccurrenceService
     Task<Occurrence?> Update(OccurrenceDTO occurrence);
     Task<bool> Delete(int id);
     Task<List<OccurrenceDTO>> GetOccurrencesByIntervalName(String intervalName,PaginationDTO pagination);
-    public Task<DiversityCountsDTO> getDiversityByIntervalName(string intervalName);
+    public Task<Diversity> getDiversityByIntervalName(string intervalName);
     
 }
 
@@ -38,6 +38,7 @@ public class OccurrenceService : IOccurrenceService
         this._context = context;
         this._logger = (ILogger<OccurrenceService>?)logger;
        this._mapper = _mapper;
+
     }
     public  async Task<List<OccurrenceDTO>> GetAll(PaginationDTO pagination)
     {
@@ -49,54 +50,78 @@ public class OccurrenceService : IOccurrenceService
         return occurrenceDTOs;
     }
 
-    public async Task<DiversityCountsDTO> getDiversityByIntervalName(string intervalName = "")
+    public async Task<Diversity> getDiversityByIntervalName(string intervalName = "")
     {
+        var interval = this._context.Intervals.Where(i => i.IntervalName == intervalName).FirstOrDefault();
+
         var result = _context
             .Occurrences
-                // Trying to do a conditional where we get diversity for all intervals if the intervalName is empty
-            .Where(o => intervalName== "" ? o.EarlyInterval == intervalName: 1==1)
+            // Trying to do a conditional where we get diversity for all intervals if the intervalName is empty
+            .Where(o =>
+                intervalName == "" ? o.EarlyInterval == intervalName : 1 == 1)
             .GroupBy(o => o.EarlyInterval)
+            .OrderBy(g => g.Key)
             .Select(g => new
             {
-                IntervalName = g.Select(o=>o.EarlyInterval).FirstOrDefault(),
+                color = g.Where(o=>o.EarlyInterval == intervalName).Select(i=>i.Interval.Color),
+                IntervalName = g.Select(o => o.EarlyInterval).FirstOrDefault(),
                 CountOfPhylum = g.Select(o => o.Phylum).Distinct().Count(),
                 CountOfClasses = g.Select(o => o.Class).Distinct().Count(),
                 CountOfOrders = g.Select(o => o.Order).Distinct().Count(),
                 CountOfFamilies = g.Select(o => o.Family).Distinct().Count(),
                 CountOfGenera = g.Select(o => o.Genus).Distinct().Count(),
             })
-            .FirstOrDefault();    
+            .FirstOrDefault();
 
-        return new DiversityCountsDTO(result.IntervalName,result.CountOfPhylum, result.CountOfClasses, result.CountOfOrders, result.CountOfFamilies, result.CountOfGenera);
+        //[TODO:] Create a mapper for this
+        var dto = new Diversity();
+        dto.intervalName = result.IntervalName;
+        dto.CountOfPhylum = result.CountOfPhylum;
+        dto.CountOfClasses = result.CountOfClasses;
+        dto.CountOfOrders = result.CountOfOrders;
+        dto.CountOfFamilies = result.CountOfFamilies;
+        dto.CountOfGenera = result.CountOfGenera;
+
+
+        return dto;
     }
     
-    public async Task<List<DiversityCountsDTO>> getDiversity(string intervalName = "")
+    public async Task<List<Diversity>> getDiversity(PaginationDTO pagination)
     {
-        List<DiversityCountsDTO> diversities = new List<DiversityCountsDTO>();
+        List<Diversity> diversities = new List<Diversity>();
         var data = _context
             .Occurrences
             // Trying to do a conditional where we get diversity for all intervals if the intervalName is empty
             .GroupBy(o => o.EarlyInterval)
             .Select(g => new
             {
+                CountOfOccurences = g.Count(),
                 CountOfPhylum = g.Select(o => o.Phylum).Distinct().Count(),
                 CountOfClasses = g.Select(o => o.Class).Distinct().Count(),
                 CountOfOrders = g.Select(o => o.Order).Distinct().Count(),
                 CountOfFamilies = g.Select(o => o.Family).Distinct().Count(),
                 CountOfGenera = g.Select(o => o.Genus).Distinct().Count(),
-                interval = g.Select(o=>o.EarlyInterval).FirstOrDefault()
-            }).ToListAsync();
+                interval = g.Select(o => o.EarlyInterval).FirstOrDefault(),
+                maxMya = g.Select(o => o.MaxMa).FirstOrDefault(),
+                minMya= g.Select(o=>o.MinMa).FirstOrDefault(),
+            }).Take(pagination.limit).Skip(pagination.skip).ToListAsync();
+        //[TODO:] Is this loop really needed?
         data.Result.ForEach(
             data =>
             {
-                var dto = new DiversityCountsDTO(
-                   data.interval,
-                   data.CountOfPhylum,
-                   data.CountOfClasses,
-                   data.CountOfOrders,
-                   data.CountOfFamilies,
-                   data.CountOfGenera
-                );
+                var dto = new Diversity()
+                {
+                    minMya = data.minMya,
+                    maxMya = data.maxMya,
+                    intervalName = data.interval,
+                    CountOfPhylum = data.CountOfPhylum,
+                    CountOfClasses = data.CountOfClasses,
+                    CountOfOrders = data.CountOfOrders,
+                    CountOfFamilies = data.CountOfFamilies,
+                    CountOfGenera = data.CountOfGenera,
+                    CountOfOccurences = data.CountOfOccurences
+                    
+                };
                 diversities.Add(dto);
             });
         return diversities;

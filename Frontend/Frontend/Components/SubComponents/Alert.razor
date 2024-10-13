@@ -1,0 +1,47 @@
+﻿
+@if(AlertType == EnumAlertType.Info)
+{
+  <div class="alert alert-info" role="info">
+    @Message
+  </div>
+}
+else if(AlertType == EnumAlertType.Error)
+{
+  <div class="alert alert-danger" role="alert">
+    @Message
+  </div>
+}
+else if(AlertType == EnumAlertType.Success)
+{
+  <div class="alert alert-success" role="alert">
+    @Message
+  </div>
+}
+else if(AlertType == EnumAlertType.Warning)
+{
+  <div class="alert alert-warning" role="warning">
+    @Message
+  </div>
+}
+else
+{
+  <div class="alert info-primary" role="info">
+    @Message
+  </div>
+}
+
+
+@code {
+  public enum EnumAlertType
+  {
+    Info,
+    Error,
+    Success,
+    Warning,
+  }
+  [Parameter]
+    public string Message { get; set; }
+  [Parameter]
+    public EnumAlertType AlertType { get; set; }
+
+}

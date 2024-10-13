@@ -5,6 +5,7 @@
 @using Microsoft.AspNetCore.Components.QuickGrid
 
 @using Humanizer
+@using Align = Microsoft.AspNetCore.Components.QuickGrid.Align
 @using SortDirection = Microsoft.AspNetCore.Components.QuickGrid.SortDirection
 @using Array = Mysqlx.Expr.Array
 
@@ -36,10 +37,10 @@ else if(isLoading)
         
 </div>
 
-@if (intervals != null)
-{
-    <IntervalSelectFilter  Intervals="intervals" OnIntervalChanged="OnIntervalChanged"/>
-}
+@* @if (intervals != null) *@
+@* { *@
+@*     <IntervalSelectFilter  Intervals="intervals" OnIntervalChanged="OnIntervalChanged"/> *@
+@* } *@
 
 
 <div role="banner" align="center">

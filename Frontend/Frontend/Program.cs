@@ -1,7 +1,8 @@
 using Frontend.Client.Pages;
 
 using Frontend.Components;
-
+using MudBlazor.Services;
+using MudBlazor;
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddBlazorBootstrap();
 var BaseAddress = new Uri(builder.Configuration["FrontendUrl"] ?? "https://localhost:4000");
@@ -23,7 +24,7 @@ builder.Services.AddRazorComponents()
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
+// Configure the HTTP request pipeline. 
 if (app.Environment.IsDevelopment())
 {
     app.UseWebAssemblyDebugging();
