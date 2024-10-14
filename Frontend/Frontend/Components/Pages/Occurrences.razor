@@ -6,6 +6,9 @@
 {
 <h1>Showing @occurrences.Length Occurrences</h1>
 
+<IntervalFilter Intervals="intervals" OnIntervalChanged="OnIntervalChanged"/>
+<CladisticsFilter Cladistics="cladistics" OnCladisticsChanged="OnCladisticsChanged"/>
+
 <div class="table-responsive">
     <table class="table">
         <thead>
@@ -46,8 +49,22 @@ else
 }
 @code {
     //[TODO] Switch to using DTOs
-    private Occurrence[] occurrences;
+    private List<Occurrence> occurrences;
     private Boolean isLoading = false;
+    
+    private void OnCladisticsChangeCallback(string value)
+    {
+        if (value != null)
+        {
+            //[TODO] [CRITICAL] Implement the filter logic so we can filter on dynamic field depending on the rank selected
+            occurrences = occurrences.Where(o => o.Genus == value).ToList();
+//            await Task.CompletedTask;
+        }
+        else
+        {
+            System.Console.WriteLine($"No interval name was received from the filter");
+        }
+    }
     
     protected override async Task OnInitializedAsync()
     {
@@ -56,4 +73,5 @@ else
         occurrences = await client.GetFromJsonAsync<Occurrence[]>("https://localhost:8443/api/occurrence?skip=0&limit=10&sortBy=interval_no&sortDir=ASC");
         isLoading = false;
     }
+}
 }

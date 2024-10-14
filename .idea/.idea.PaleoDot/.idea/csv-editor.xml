@@ -3,6 +3,13 @@
   <component name="CsvFileAttributes">
     <option name="attributeMap">
       <map>
+        <entry key="\Frontend\Frontend\SampleData\intervals.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\Frontend\Frontend\SampleData\permian-occurrences.csv">
           <value>
             <Attribute>

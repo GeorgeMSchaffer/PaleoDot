@@ -1,0 +1,84 @@
+﻿
+@using Backend.Models
+@using Backend.Models.DTOs
+@using Backend.POJO
+@using Microsoft.AspNetCore.Components
+@using BlazorBootstrap
+@using Frontend.Components.Pages
+@using Humanizer
+@inject HttpClient client
+@using System.ComponentModel.DataAnnotations
+<div class="row">
+<div class="col-md-5 col-sm-12">
+  <select @onchange="(e) => OnCladisticsChange(e) ">
+    <option value="">Select interval</option>
+    @if (cladisticsList != null)
+    {
+    @foreach (var clade in cladisticsList)
+    {
+
+    <option  value="@selectedValue">@clade.Clade</option>
+    }
+    }
+  </select>
+</div>
+</div>
+@code
+{
+  //[TODO] 
+  [Parameter] public EventCallback<String> OnCladisticsChangeCallback { get; set; }
+
+  [Parameter] public EnumCladistics rank { get; set; }
+  [Parameter] public string selectedValue { get; set; } = "";
+
+  public List<Cladistics> cladisticsList = new List<Cladistics>
+  {
+    new Cladistics { Clade = "Eukarya", Rank = EnumCladistics.Domain },
+    new Cladistics { Clade = "Bacteria", Rank = EnumCladistics.Domain },
+    new Cladistics { Clade = "Archaea", Rank = EnumCladistics.Domain },
+    new Cladistics { Clade = "Animalia", Rank = EnumCladistics.Kingdom },
+    new Cladistics { Clade = "Plantae", Rank = EnumCladistics.Kingdom },
+    new Cladistics { Clade = "Fungi", Rank = EnumCladistics.Kingdom },
+    new Cladistics { Clade = "Protista", Rank = EnumCladistics.Kingdom },
+    new Cladistics { Clade = "Monera", Rank = EnumCladistics.Kingdom },
+    new Cladistics { Clade = "Chordata", Rank = EnumCladistics.Phylum },
+    new Cladistics { Clade = "Arthropoda", Rank = EnumCladistics.Phylum },
+    new Cladistics { Clade = "Mollusca", Rank = EnumCladistics.Phylum },
+    new Cladistics { Clade = "Echinodermata", Rank = EnumCladistics.Phylum },
+    new Cladistics { Clade = "Cnidaria", Rank = EnumCladistics.Phylum },
+    new Cladistics { Clade = "Porifera", Rank = EnumCladistics.Phylum },
+    new Cladistics { Clade = "Plantae", Rank = EnumCladistics.Phylum },
+    new Cladistics { Clade = "Fungi", Rank = EnumCladistics.Phylum },
+    new Cladistics { Clade = "Protista", Rank = EnumCladistics.Phylum },
+    new Cladistics { Clade = "Monera", Rank = EnumCladistics.Phylum },
+    new Cladistics { Clade = "Mammalia", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Aves", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Reptilia", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Amphibia", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Pisces", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Insecta", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Arachnida", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Crustacea", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Annelida", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Chordata", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Arthropoda", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Mollusca", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Echinodermata", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Cnidaria", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Porifera", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Platyhelminthes", Rank = EnumCladistics.Class },
+    new Cladistics { Clade = "Nematoda", Rank = EnumCladistics.Class }
+  };
+
+  public List<Cladistics> dropdownData { get; set; }
+
+  protected override async Task OnInitializedAsync()
+  {
+    dropdownData = cladisticsList.Where(c => c.Rank == rank).ToList();
+  }
+  public void OnCladisticsChange(ChangeEventArgs e)
+  {
+    selectedValue = e.Value.ToString();
+    OnCladisticsChangeCallback.InvokeAsync(selectedValue);
+  }
+}

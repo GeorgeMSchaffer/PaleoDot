@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "RsmLw0+nnHSRzrix1AM0WFEuQbFDmwcXig+RcNegN5o=",
+  "Hash": "FNylM+uO6k9rd466panA0nO2rrdiVYm3YmdJrVN1c3U=",
   "Source": "Frontend.Client",
   "BasePath": "/",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "kadwhcowhz",
-      "Integrity": "TOzYuBEfbhpsRywsR/bUW5DMG9DFYtAMn7lQmwk5ZWQ=",
+      "Fingerprint": "oi10dxeomz",
+      "Integrity": "sDj3skl/AsIGinNk40R7PYQloCi+CCtjD1tH7Hvos8M=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\blazor.boot.json"
@@ -241,8 +241,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "80cihka25l",
-      "Integrity": "SK5BuzB+pG52RDDD8scPmtbtSv36ZG7IkvdfAtCE2W8=",
+      "Fingerprint": "6xgoyp7hy8",
+      "Integrity": "qoHAPPe95S5k0q5n5n+VkIjgCLF5fdAS7At5R31zxs0=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "obj\\Debug\\net8.0\\Frontend.Client.pdb"
@@ -262,8 +262,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "w8drwpx3pj",
-      "Integrity": "0G+ipFtoWMMWcU5PouMBz6u3Zxa9SbZB3h1wbWfe0ig=",
+      "Fingerprint": "cn802b3ddl",
+      "Integrity": "OBbAKUbWgNrXu8fHUaLzd2er/yBFOAC9/TGr1q1WdyQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\webcil\\Frontend.Client.wasm"
@@ -5246,7 +5246,7 @@
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Net.Http.wasm"
     },
     {
-      "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-kadwhcowhz.gz",
+      "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-oi10dxeomz.gz",
       "SourceId": "Frontend.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -5260,8 +5260,8 @@
       "RelatedAsset": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "3a1ms61m1c",
-      "Integrity": "BUwpoKdLiKnqobiVXuckY9q1jpH7fYc94xpo2YlYT4M=",
+      "Fingerprint": "gdqaqlyhdj",
+      "Integrity": "BNIsobQS2LsTPpRK92I5F6Ye3Nx+qoaMoJLaF2mVLJs=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -6443,7 +6443,7 @@
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Runtime.Serialization.wasm"
     },
     {
-      "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-80cihka25l.gz",
+      "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-6xgoyp7hy8.gz",
       "SourceId": "Frontend.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -6457,8 +6457,8 @@
       "RelatedAsset": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Client.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "z2u9lp54t2",
-      "Integrity": "i4mkeL54JhACKJvS3pLNK69OAR7ya7epzdyCUBsz504=",
+      "Fingerprint": "1f0p9l7nhb",
+      "Integrity": "o+Sp+aNYMLzenO5ZpEEFdhbZdlmPs+GyXWdcqwfqWJI=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Client.pdb"
@@ -8606,7 +8606,7 @@
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\System.Text.RegularExpressions.wasm"
     },
     {
-      "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-w8drwpx3pj.gz",
+      "Identity": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-cn802b3ddl.gz",
       "SourceId": "Frontend.Client",
       "SourceType": "Computed",
       "ContentRoot": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -8620,8 +8620,8 @@
       "RelatedAsset": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Client.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "gv1hxanlgs",
-      "Integrity": "RAMWJ6JIE1Ts08GUlxGhjWwGg3pA47vUolNT/mrgX5Q=",
+      "Fingerprint": "clmbgswyqr",
+      "Integrity": "4DiHEhyyapSkbrCtxpomFJ9x3HOAfIujNipWcFGHpGY=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Client.wasm"
@@ -9216,7 +9216,46 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"TOzYuBEfbhpsRywsR/bUW5DMG9DFYtAMn7lQmwk5ZWQ=\""
+          "Value": "\"sDj3skl/AsIGinNk40R7PYQloCi+CCtjD1tH7Hvos8M=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 14 Oct 2024 15:38:45 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-sDj3skl/AsIGinNk40R7PYQloCi+CCtjD1tH7Hvos8M="
+        }
+      ]
+    },
+    {
+      "Route": "_framework/blazor.boot.json",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-oi10dxeomz.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000113895216"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "8779"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BNIsobQS2LsTPpRK92I5F6Ye3Nx+qoaMoJLaF2mVLJs=\""
         },
         {
           "Name": "Last-Modified",
@@ -9225,45 +9264,6 @@
         {
           "Name": "Cache-Control",
           "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-TOzYuBEfbhpsRywsR/bUW5DMG9DFYtAMn7lQmwk5ZWQ="
-        }
-      ]
-    },
-    {
-      "Route": "_framework/blazor.boot.json",
-      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-kadwhcowhz.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000113856313"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "8782"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"BUwpoKdLiKnqobiVXuckY9q1jpH7fYc94xpo2YlYT4M=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 13 Oct 2024 21:22:15 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
         },
         {
           "Name": "Content-Encoding",
@@ -9279,19 +9279,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"TOzYuBEfbhpsRywsR/bUW5DMG9DFYtAMn7lQmwk5ZWQ=\""
+          "Value": "W/\"sDj3skl/AsIGinNk40R7PYQloCi+CCtjD1tH7Hvos8M=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-TOzYuBEfbhpsRywsR/bUW5DMG9DFYtAMn7lQmwk5ZWQ="
+          "Value": "sha256-sDj3skl/AsIGinNk40R7PYQloCi+CCtjD1tH7Hvos8M="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-kadwhcowhz.gz",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-oi10dxeomz.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9300,7 +9300,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8782"
+          "Value": "8779"
         },
         {
           "Name": "Content-Type",
@@ -9308,11 +9308,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BUwpoKdLiKnqobiVXuckY9q1jpH7fYc94xpo2YlYT4M=\""
+          "Value": "\"BNIsobQS2LsTPpRK92I5F6Ye3Nx+qoaMoJLaF2mVLJs=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 13 Oct 2024 21:22:15 GMT"
+          "Value": "Sun, 13 Oct 2024 21:22:34 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9330,7 +9330,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BUwpoKdLiKnqobiVXuckY9q1jpH7fYc94xpo2YlYT4M="
+          "Value": "sha256-BNIsobQS2LsTPpRK92I5F6Ye3Nx+qoaMoJLaF2mVLJs="
         }
       ]
     },
@@ -10586,11 +10586,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"SK5BuzB+pG52RDDD8scPmtbtSv36ZG7IkvdfAtCE2W8=\""
+          "Value": "\"qoHAPPe95S5k0q5n5n+VkIjgCLF5fdAS7At5R31zxs0=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Oct 2024 20:33:42 GMT"
+          "Value": "Mon, 14 Oct 2024 15:38:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10600,18 +10600,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SK5BuzB+pG52RDDD8scPmtbtSv36ZG7IkvdfAtCE2W8="
+          "Value": "sha256-qoHAPPe95S5k0q5n5n+VkIjgCLF5fdAS7At5R31zxs0="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Client.pdb",
-      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-80cihka25l.gz",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-6xgoyp7hy8.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000103498241"
+          "Quality": "0.000103487530"
         }
       ],
       "ResponseHeaders": [
@@ -10621,11 +10621,11 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9661"
+          "Value": "9662"
         },
         {
           "Name": "ETag",
-          "Value": "\"i4mkeL54JhACKJvS3pLNK69OAR7ya7epzdyCUBsz504=\""
+          "Value": "\"o+Sp+aNYMLzenO5ZpEEFdhbZdlmPs+GyXWdcqwfqWJI=\""
         },
         {
           "Name": "Last-Modified",
@@ -10649,19 +10649,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"SK5BuzB+pG52RDDD8scPmtbtSv36ZG7IkvdfAtCE2W8=\""
+          "Value": "W/\"qoHAPPe95S5k0q5n5n+VkIjgCLF5fdAS7At5R31zxs0=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-SK5BuzB+pG52RDDD8scPmtbtSv36ZG7IkvdfAtCE2W8="
+          "Value": "sha256-qoHAPPe95S5k0q5n5n+VkIjgCLF5fdAS7At5R31zxs0="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Client.pdb.gz",
-      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-80cihka25l.gz",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-6xgoyp7hy8.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10670,7 +10670,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9661"
+          "Value": "9662"
         },
         {
           "Name": "Content-Type",
@@ -10678,7 +10678,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"i4mkeL54JhACKJvS3pLNK69OAR7ya7epzdyCUBsz504=\""
+          "Value": "\"o+Sp+aNYMLzenO5ZpEEFdhbZdlmPs+GyXWdcqwfqWJI=\""
         },
         {
           "Name": "Last-Modified",
@@ -10700,7 +10700,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-i4mkeL54JhACKJvS3pLNK69OAR7ya7epzdyCUBsz504="
+          "Value": "sha256-o+Sp+aNYMLzenO5ZpEEFdhbZdlmPs+GyXWdcqwfqWJI="
         }
       ]
     },
@@ -10723,11 +10723,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0G+ipFtoWMMWcU5PouMBz6u3Zxa9SbZB3h1wbWfe0ig=\""
+          "Value": "\"OBbAKUbWgNrXu8fHUaLzd2er/yBFOAC9/TGr1q1WdyQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Oct 2024 20:33:42 GMT"
+          "Value": "Mon, 14 Oct 2024 15:38:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10737,18 +10737,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0G+ipFtoWMMWcU5PouMBz6u3Zxa9SbZB3h1wbWfe0ig="
+          "Value": "sha256-OBbAKUbWgNrXu8fHUaLzd2er/yBFOAC9/TGr1q1WdyQ="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Client.wasm",
-      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-w8drwpx3pj.gz",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-cn802b3ddl.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000268672757"
+          "Quality": "0.000269251481"
         }
       ],
       "ResponseHeaders": [
@@ -10758,11 +10758,11 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3721"
+          "Value": "3713"
         },
         {
           "Name": "ETag",
-          "Value": "\"RAMWJ6JIE1Ts08GUlxGhjWwGg3pA47vUolNT/mrgX5Q=\""
+          "Value": "\"4DiHEhyyapSkbrCtxpomFJ9x3HOAfIujNipWcFGHpGY=\""
         },
         {
           "Name": "Last-Modified",
@@ -10786,19 +10786,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"0G+ipFtoWMMWcU5PouMBz6u3Zxa9SbZB3h1wbWfe0ig=\""
+          "Value": "W/\"OBbAKUbWgNrXu8fHUaLzd2er/yBFOAC9/TGr1q1WdyQ=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0G+ipFtoWMMWcU5PouMBz6u3Zxa9SbZB3h1wbWfe0ig="
+          "Value": "sha256-OBbAKUbWgNrXu8fHUaLzd2er/yBFOAC9/TGr1q1WdyQ="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Client.wasm.gz",
-      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-w8drwpx3pj.gz",
+      "AssetFile": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-cn802b3ddl.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10807,7 +10807,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "3721"
+          "Value": "3713"
         },
         {
           "Name": "Content-Type",
@@ -10815,7 +10815,7 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"RAMWJ6JIE1Ts08GUlxGhjWwGg3pA47vUolNT/mrgX5Q=\""
+          "Value": "\"4DiHEhyyapSkbrCtxpomFJ9x3HOAfIujNipWcFGHpGY=\""
         },
         {
           "Name": "Last-Modified",
@@ -10837,7 +10837,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-RAMWJ6JIE1Ts08GUlxGhjWwGg3pA47vUolNT/mrgX5Q="
+          "Value": "sha256-4DiHEhyyapSkbrCtxpomFJ9x3HOAfIujNipWcFGHpGY="
         }
       ]
     },

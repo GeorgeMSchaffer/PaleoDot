@@ -9,7 +9,6 @@
 @* { *@
 <div>
 
-    <b>Filter:</b>
     <div class="row">
         <div class="col-md-5 col-sm-12">
             @if (Intervals != null)
@@ -25,40 +24,6 @@
             }
         </div>
     </div>
-    <div class="row" style="border:1px solid black">
-        <b>Select Filter</b>
-        @* <b>Select Filter</b> *@
-        <select @bind:get="SelectedInterval" @bind:set="(e)=>onSelect(e)">
-          @foreach (var interval in Intervals)
-          {
-            <option value="@interval.IntervalName">@interval.IntervalName</option>
-          }
-        </select>
-        <b>Autocomplete</b>
-        @if (Intervals != null)
-        {
-        @*     <AutoComplete *@
-        @*         Value="Bob" *@
-        @*     TItem="Interval" *@
-        @*     DataProvider="AutoCompleteDataProvider" *@
-        @*     LoadingText="Loading..." *@
-        @*     PropertyName="IntervalName" *@
-        @*     Placeholder="Search an Interval..." *@
-        @*     OnChanged="((interval) => OnAutoCompleteChanged(interval))"> *@
-        @* </AutoComplete> *@
-        }
-        @* <select  @onselect="@(e=>onSelect(e))" @onchange="@(OnIntervalSelected)"> *@
-        @*     @foreach(var interval in Intervals) *@
-        @*     {  *@
-        @*         <option *@
-        @*             value="@interval.IntervalName" *@
-        @*             > *@
-        @*                 @interval.IntervalName *@
-        @*         </option> *@
-        @*     } *@
-        @* </select> *@
-    </div>
-
     </div>
 
 

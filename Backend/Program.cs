@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<AppDbContext>(options => options.UseMySQL("server=127.0.0.1;uid=root;pwd=rsbr220Sql!;database=paleo"));
 builder.Services.AddScoped<IntervalService>();
 builder.Services.AddScoped<OccurrenceService>();
+builder.Services.AddScoped<CladisticsService>();
 // builder.Services.AddScoped<SpeciesService>();
 // builder.Services.AddScoped<TaxaService>();
 builder.Services.AddAutoMapper(Assembly.GetExecutingAssembly());

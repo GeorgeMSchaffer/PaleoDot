@@ -28,7 +28,7 @@ public class AppDbContext : DbContext
 
     public DbSet<Interval> Intervals => Set<Interval>();
     public DbSet<Occurrence> Occurrences => Set<Occurrence>();
-    
+    public DbSet<Cladistics> Cladistics => Set<Cladistics>();
     
   //  public DbSet<Species> Species => Set<Species>();
    // public DbSet<Taxa> Taxas => Set<Taxa>();
