@@ -4,7 +4,7 @@
 <h3>Fossil Occurrences</h3>
 @if(occurrences != null)
 {
-<h1>Showing @occurrences.Length Occurrences</h1>
+<h1>Showing @occurrences.Count() Occurrences</h1>
 
 <IntervalFilter Intervals="intervals" OnIntervalChanged="OnIntervalChanged"/>
 <CladisticsFilter Cladistics="cladistics" OnCladisticsChanged="OnCladisticsChanged"/>
@@ -70,7 +70,7 @@ else
     {
         isLoading = true;
         //[TODO] fix endpoints so they have the same pluralization and use the created httpClient registered in Program.cs
-        occurrences = await client.GetFromJsonAsync<Occurrence[]>("https://localhost:8443/api/occurrence?skip=0&limit=10&sortBy=interval_no&sortDir=ASC");
+        occurrences = await client.GetFromJsonAsync<List<Occurrence>>("https://localhost:8443/api/occurrence?skip=0&limit=10&sortBy=interval_no&sortDir=ASC");
         isLoading = false;
     }
 }
