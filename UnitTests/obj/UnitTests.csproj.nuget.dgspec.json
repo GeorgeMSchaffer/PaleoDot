@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\code\\dotnet\\PaleoDot\\UnitTests\\UnitTests.csproj": {}
+    "c:\\code\\dotnet\\PaleoDot\\UnitTests\\UnitTests.csproj": {}
   },
   "projects": {
-    "C:\\code\\dotnet\\PaleoDot\\Backend\\Backend.csproj": {
+    "c:\\code\\dotnet\\PaleoDot\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\code\\dotnet\\PaleoDot\\Backend\\Backend.csproj",
+        "projectUniqueName": "c:\\code\\dotnet\\PaleoDot\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "C:\\code\\dotnet\\PaleoDot\\Backend\\Backend.csproj",
+        "projectPath": "c:\\code\\dotnet\\PaleoDot\\Backend\\Backend.csproj",
         "packagesPath": "C:\\Users\\the46\\.nuget\\packages\\",
-        "outputPath": "C:\\code\\dotnet\\PaleoDot\\Backend\\obj\\",
+        "outputPath": "c:\\code\\dotnet\\PaleoDot\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\the46\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -147,14 +147,14 @@
         }
       }
     },
-    "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj": {
+    "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj",
+        "projectUniqueName": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj",
         "projectName": "Frontend.Client",
-        "projectPath": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj",
+        "projectPath": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj",
         "packagesPath": "C:\\Users\\the46\\.nuget\\packages\\",
-        "outputPath": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\",
+        "outputPath": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\the46\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -254,14 +254,14 @@
         }
       }
     },
-    "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend\\Frontend.csproj": {
+    "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend\\Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend\\Frontend.csproj",
+        "projectUniqueName": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend\\Frontend.csproj",
         "projectName": "Frontend",
-        "projectPath": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend\\Frontend.csproj",
+        "projectPath": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend\\Frontend.csproj",
         "packagesPath": "C:\\Users\\the46\\.nuget\\packages\\",
-        "outputPath": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend\\obj\\",
+        "outputPath": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\the46\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -279,11 +279,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\code\\dotnet\\PaleoDot\\Backend\\Backend.csproj": {
-                "projectPath": "C:\\code\\dotnet\\PaleoDot\\Backend\\Backend.csproj"
+              "c:\\code\\dotnet\\PaleoDot\\Backend\\Backend.csproj": {
+                "projectPath": "c:\\code\\dotnet\\PaleoDot\\Backend\\Backend.csproj"
               },
-              "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj": {
-                "projectPath": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj"
+              "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj": {
+                "projectPath": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj"
               }
             }
           }
@@ -382,14 +382,14 @@
         }
       }
     },
-    "C:\\code\\dotnet\\PaleoDot\\UnitTests\\UnitTests.csproj": {
+    "c:\\code\\dotnet\\PaleoDot\\UnitTests\\UnitTests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\code\\dotnet\\PaleoDot\\UnitTests\\UnitTests.csproj",
+        "projectUniqueName": "c:\\code\\dotnet\\PaleoDot\\UnitTests\\UnitTests.csproj",
         "projectName": "UnitTests",
-        "projectPath": "C:\\code\\dotnet\\PaleoDot\\UnitTests\\UnitTests.csproj",
+        "projectPath": "c:\\code\\dotnet\\PaleoDot\\UnitTests\\UnitTests.csproj",
         "packagesPath": "C:\\Users\\the46\\.nuget\\packages\\",
-        "outputPath": "C:\\code\\dotnet\\PaleoDot\\UnitTests\\obj\\",
+        "outputPath": "c:\\code\\dotnet\\PaleoDot\\UnitTests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\the46\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -407,11 +407,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\code\\dotnet\\PaleoDot\\Backend\\Backend.csproj": {
-                "projectPath": "C:\\code\\dotnet\\PaleoDot\\Backend\\Backend.csproj"
+              "c:\\code\\dotnet\\PaleoDot\\Backend\\Backend.csproj": {
+                "projectPath": "c:\\code\\dotnet\\PaleoDot\\Backend\\Backend.csproj"
               },
-              "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend\\Frontend.csproj": {
-                "projectPath": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend\\Frontend.csproj"
+              "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend\\Frontend.csproj": {
+                "projectPath": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend\\Frontend.csproj"
               }
             }
           }

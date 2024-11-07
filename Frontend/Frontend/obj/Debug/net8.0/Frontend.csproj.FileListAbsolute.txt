@@ -346,3 +346,5 @@ C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\staticwebassets.build
 C:\code\dotnet\PaleoDot\Frontend\Frontend\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\ChartJs.Blazor.dll
 C:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\PSC.Blazor.Components.Chartjs.dll
+c:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\SampleData\occurrences-957-Duntroonian.json
+c:\code\dotnet\PaleoDot\Frontend\Frontend\bin\Debug\net8.0\SampleData\occurrences-late-permian.json

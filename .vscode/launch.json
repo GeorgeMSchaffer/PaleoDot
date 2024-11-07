@@ -18,6 +18,7 @@
                 "ASPNETCORE_ENVIRONMENT": "Development"
             }
         },
+        
         {
             // Use IntelliSense to find out which attributes exist for C# debugging
             // Use hover for the description of the existing attributes

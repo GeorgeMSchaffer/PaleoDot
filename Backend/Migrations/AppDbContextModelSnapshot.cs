@@ -19,6 +19,28 @@ namespace Backend.Migrations
                 .HasAnnotation("ProductVersion", "8.0.8")
                 .HasAnnotation("Relational:MaxIdentifierLength", 64);
 
+            modelBuilder.Entity("Backend.Models.Cladistics", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasColumnName("id");
+
+                    b.Property<string>("Clade")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)")
+                        .HasColumnName("clade");
+
+                    b.Property<string>("Rank")
+                        .IsRequired()
+                        .HasColumnType("varchar(255)")
+                        .HasColumnName("rank");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Cladistics");
+                });
+
             modelBuilder.Entity("Backend.Models.Interval", b =>
                 {
                     b.Property<int>("IntervalNo")

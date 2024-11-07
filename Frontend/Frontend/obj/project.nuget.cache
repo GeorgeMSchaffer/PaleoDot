@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "IRFVVVas7zY=",
+  "dgSpecHash": "QdHJcVG5WPw=",
   "success": true,
-  "projectFilePath": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend\\Frontend.csproj",
+  "projectFilePath": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend\\Frontend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\the46\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\the46\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

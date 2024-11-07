@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj": {}
+    "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj": {}
   },
   "projects": {
-    "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj": {
+    "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj",
+        "projectUniqueName": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj",
         "projectName": "Frontend.Client",
-        "projectPath": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj",
+        "projectPath": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj",
         "packagesPath": "C:\\Users\\the46\\.nuget\\packages\\",
-        "outputPath": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\",
+        "outputPath": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\the46\\AppData\\Roaming\\NuGet\\NuGet.Config",

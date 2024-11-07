@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sPCM3k23nss=",
+  "dgSpecHash": "UAiPTHPzwus=",
   "success": true,
-  "projectFilePath": "C:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj",
+  "projectFilePath": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\Frontend.Client.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\the46\\.nuget\\packages\\blazor.bootstrap\\3.0.0\\blazor.bootstrap.3.0.0.nupkg.sha512",
     "C:\\Users\\the46\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.8\\microsoft.aspnetcore.authorization.8.0.8.nupkg.sha512",
