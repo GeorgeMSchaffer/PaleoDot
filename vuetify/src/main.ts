@@ -12,21 +12,21 @@ import App from './App.vue'
 
 // Composables
 import { createApp } from 'vue'
-import Aura from '@primevue/themes/aura';
+import Aura from '@primevue/themes/aura'
 
 const app = createApp(App)
 
 registerPlugins(app)
-app.use(Primevue, { 
+app.use(Primevue, {
   ripple: true,
   theme: {
     preset: Aura,
     options: {
-    prefix: 'p',
-    darkModeSelector: 'system',
-    cssLayer: false
-}
-}
+      prefix: 'p',
+      darkModeSelector: 'system',
+      cssLayer: false,
+    },
+  },
 })
 app.provide('$primevue', app.config.globalProperties.$primevue)
 

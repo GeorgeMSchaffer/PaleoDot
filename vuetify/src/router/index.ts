@@ -8,6 +8,7 @@
 import { createRouter, createWebHistory } from 'vue-router/auto'
 import { setupLayouts } from 'virtual:generated-layouts'
 import { routes } from 'vue-router/auto-routes'
+import BioDiversityList from '@/components/Diversity/BioDiversityList.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,6 +29,9 @@ router.onError((err, to) => {
     console.error(err)
   }
 })
+
+router.addRoute({ name: 'Diversity', path: '/diversity/:intervalName', component: BioDiversityList })
+router.addRoute({ name: 'Diversity', path: '/diversity/', component: BioDiversityList })
 
 router.isReady().then(() => {
   localStorage.removeItem('vuetify:dynamic-reload')

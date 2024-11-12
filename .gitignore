@@ -17,3 +17,7 @@ Frontend/node_modules
 /Frontend/Frontend/obj/Debug/net8.0
 /.vs/ProjectEvaluation
 /.vs
+/Frontend/Frontend.Client/bin
+/.vs/PaleoDot/v17
+/Frontend/Frontend.Client/bin/Debug/net8.0/wwwroot/_framework
+/Frontend/Frontend.Client/bin

@@ -8,6 +8,8 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     AppFooter: typeof import('./components/AppFooter.vue')['default']
+    BioDiversityList: typeof import('./components/Diversity/BioDiversityList.vue')['default']
+    DiversityList: typeof import('./components/Diversity/DiversityList.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     IntervalsList: typeof import('./components/Intervals/IntervalsList.vue')['default']
     OccurrencesList: typeof import('./components/Occurrences/OccurrencesList.vue')['default']

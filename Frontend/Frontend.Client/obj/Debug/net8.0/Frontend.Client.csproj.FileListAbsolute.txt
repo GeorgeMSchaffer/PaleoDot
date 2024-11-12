@@ -1036,6 +1036,6 @@ C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\compressed\q6r
 C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\compressed\nfsq6jh88r-oyz0vx2fzb.gz
 C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\staticwebassets.build.endpoints.json
 C:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\staticwebassets\msbuild.Frontend.Client.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-c:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\compressed\z6eu1ggrk8-grorslpdej.gz
-c:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\compressed\fw6fh9k3ku-ixp396i7fm.gz
-c:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\compressed\6abe6ddfu9-ava08ybmnt.gz
+c:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\compressed\z6eu1ggrk8-rr85bmgifc.gz
+c:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\compressed\fw6fh9k3ku-ho39v04o6s.gz
+c:\code\dotnet\PaleoDot\Frontend\Frontend.Client\obj\Debug\net8.0\compressed\6abe6ddfu9-jg0a8u7l1n.gz

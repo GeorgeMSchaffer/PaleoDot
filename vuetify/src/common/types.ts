@@ -161,8 +161,8 @@ export type TDiversity = {
   countOfPhyla: number;
   countOfOrders: number;
   countOfGenera: number;
-  maxMa: number;
-  minMa: number;
+  maxMya: number;
+  minMya: number;
 
 }
 
@@ -303,7 +303,6 @@ export type TInterval = {
   scaleNo: number;
 }
 
-
 export type TIntervalDTO = {
   interval_no: number;
   record_type: EnumIntervalType;
@@ -311,8 +310,8 @@ export type TIntervalDTO = {
   abbrv: string;
   parent_no: number;
   color: string;
-  max_mya: number;
-  min_mya: number;
+  max_ma: number;
+  min_ma: number;
   reference_no: number;
 }
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "tz22cfbJhRAdniUQyYnsWoSvNUNDSa/mu22a1W+Rz7Y=",
+  "Hash": "KAjMpkaFqPA7cSHLu/CzWYmpNM9HV+g9LXSoCjgsDgw=",
   "Source": "Frontend",
   "BasePath": "_content/Frontend",
   "Mode": "Default",
@@ -61,8 +61,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "manifest",
-      "Fingerprint": "ava08ybmnt",
-      "Integrity": "BjeB4W1gbq9BtpjWin/TEgl879e1dag4C+UZQ+8feTQ=",
+      "Fingerprint": "jg0a8u7l1n",
+      "Integrity": "0xDVP9FKtN5bXy/8RqY2HdOUpiCCTg6UgxnWijgbuAA=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json"
@@ -271,8 +271,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "symbol",
-      "Fingerprint": "ixp396i7fm",
-      "Integrity": "+vjsR35FSZrEElKU/GafVd6zlwF+DJMTgwgq/QpoMWQ=",
+      "Fingerprint": "ho39v04o6s",
+      "Integrity": "4TlZvXb5ZE4Zt5daVQB9OfhV1cAmP5lbTAZ3Mp7oc/Y=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Client.pdb"
@@ -292,8 +292,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "WasmResource",
       "AssetTraitValue": "runtime",
-      "Fingerprint": "grorslpdej",
-      "Integrity": "5Gmj97A3gsy9Z8jf0PKX3D0XWFZG78gRb1crmsQP5rA=",
+      "Fingerprint": "rr85bmgifc",
+      "Integrity": "WcE3ccfvpsznL61ioCTxejN5FnlvdYO005nSzZ+8Da8=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
       "OriginalItemSpec": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Client.wasm"
@@ -5276,7 +5276,7 @@
       "OriginalItemSpec": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\69rgb3rqf0-z8fvh2uatd.gz"
     },
     {
-      "Identity": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-ava08ybmnt.gz",
+      "Identity": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-jg0a8u7l1n.gz",
       "SourceId": "Frontend.Client",
       "SourceType": "Project",
       "ContentRoot": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -5290,11 +5290,11 @@
       "RelatedAsset": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.boot.json",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "9gng75ccxk",
-      "Integrity": "uTUFar25+bcehs+zFRmzc8Lzqui+5V2OsJHNn8OJRa0=",
+      "Fingerprint": "zruva8unzx",
+      "Integrity": "cUjBPqZvl/SB6HcOjyOfqUBcoHJSGYcB5eGJzVeDzxE=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-ava08ybmnt.gz"
+      "OriginalItemSpec": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-jg0a8u7l1n.gz"
     },
     {
       "Identity": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6amxsd8e14-28lgkbn5z8.gz",
@@ -6473,7 +6473,7 @@
       "OriginalItemSpec": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fasrxogqcb-950ketfnmy.gz"
     },
     {
-      "Identity": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-ixp396i7fm.gz",
+      "Identity": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-ho39v04o6s.gz",
       "SourceId": "Frontend.Client",
       "SourceType": "Project",
       "ContentRoot": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -6487,11 +6487,11 @@
       "RelatedAsset": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Client.pdb",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "qz4f4hqzh2",
-      "Integrity": "Bo9pJ2/pA6J2ro7MBoNrJ+sEwPTF4s9oR15IIcJd7Zk=",
+      "Fingerprint": "6afiz4t0il",
+      "Integrity": "3oDjKjSBOPpD0CKhdIQGokGf/T6V1sT6e8Ux4MrSJSQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-ixp396i7fm.gz"
+      "OriginalItemSpec": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-ho39v04o6s.gz"
     },
     {
       "Identity": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\g357xuro4p-s53pyjmvh7.gz",
@@ -8636,7 +8636,7 @@
       "OriginalItemSpec": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\yj2577gnsf-dp12cg5jl8.gz"
     },
     {
-      "Identity": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-grorslpdej.gz",
+      "Identity": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-rr85bmgifc.gz",
       "SourceId": "Frontend.Client",
       "SourceType": "Project",
       "ContentRoot": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\",
@@ -8650,11 +8650,11 @@
       "RelatedAsset": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\bin\\Debug\\net8.0\\wwwroot\\_framework\\Frontend.Client.wasm",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "jat0hqlvvq",
-      "Integrity": "S/2l26XUoik+W7orzbXjpBgsXSnod5Z86nFiMHIRqUU=",
+      "Fingerprint": "feloxfrcs5",
+      "Integrity": "qXAveQ/WiLTwBQ6qm1ivM4H5dqemzAxqqmSL6zx53iQ=",
       "CopyToOutputDirectory": "PreserveNewest",
       "CopyToPublishDirectory": "Never",
-      "OriginalItemSpec": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-grorslpdej.gz"
+      "OriginalItemSpec": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-rr85bmgifc.gz"
     },
     {
       "Identity": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\zaj6be3o45-bmtp7y8eki.gz",
@@ -19849,28 +19849,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"BjeB4W1gbq9BtpjWin/TEgl879e1dag4C+UZQ+8feTQ=\""
+          "Value": "\"0xDVP9FKtN5bXy/8RqY2HdOUpiCCTg6UgxnWijgbuAA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 07 Nov 2024 21:55:26 GMT"
+          "Value": "Mon, 11 Nov 2024 18:19:51 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BjeB4W1gbq9BtpjWin/TEgl879e1dag4C+UZQ+8feTQ="
+          "Value": "sha256-0xDVP9FKtN5bXy/8RqY2HdOUpiCCTg6UgxnWijgbuAA="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json",
-      "AssetFile": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-ava08ybmnt.gz",
+      "AssetFile": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-jg0a8u7l1n.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000113843352"
+          "Quality": "0.000113869278"
         }
       ],
       "ResponseHeaders": [
@@ -19888,15 +19888,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8783"
+          "Value": "8781"
         },
         {
           "Name": "ETag",
-          "Value": "\"uTUFar25+bcehs+zFRmzc8Lzqui+5V2OsJHNn8OJRa0=\""
+          "Value": "\"cUjBPqZvl/SB6HcOjyOfqUBcoHJSGYcB5eGJzVeDzxE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 07 Nov 2024 21:55:08 GMT"
+          "Value": "Mon, 11 Nov 2024 18:19:30 GMT"
         },
         {
           "Name": "Vary",
@@ -19908,19 +19908,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"BjeB4W1gbq9BtpjWin/TEgl879e1dag4C+UZQ+8feTQ=\""
+          "Value": "W/\"0xDVP9FKtN5bXy/8RqY2HdOUpiCCTg6UgxnWijgbuAA=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-BjeB4W1gbq9BtpjWin/TEgl879e1dag4C+UZQ+8feTQ="
+          "Value": "sha256-0xDVP9FKtN5bXy/8RqY2HdOUpiCCTg6UgxnWijgbuAA="
         }
       ]
     },
     {
       "Route": "_framework/blazor.boot.json.gz",
-      "AssetFile": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-ava08ybmnt.gz",
+      "AssetFile": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\6abe6ddfu9-jg0a8u7l1n.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -19937,7 +19937,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "8783"
+          "Value": "8781"
         },
         {
           "Name": "Content-Type",
@@ -19945,11 +19945,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"uTUFar25+bcehs+zFRmzc8Lzqui+5V2OsJHNn8OJRa0=\""
+          "Value": "\"cUjBPqZvl/SB6HcOjyOfqUBcoHJSGYcB5eGJzVeDzxE=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 07 Nov 2024 21:55:08 GMT"
+          "Value": "Mon, 11 Nov 2024 18:19:30 GMT"
         },
         {
           "Name": "Vary",
@@ -19959,7 +19959,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-uTUFar25+bcehs+zFRmzc8Lzqui+5V2OsJHNn8OJRa0="
+          "Value": "sha256-cUjBPqZvl/SB6HcOjyOfqUBcoHJSGYcB5eGJzVeDzxE="
         }
       ]
     },
@@ -21211,7 +21211,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "15460"
+          "Value": "16192"
         },
         {
           "Name": "Content-Type",
@@ -21219,28 +21219,28 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"+vjsR35FSZrEElKU/GafVd6zlwF+DJMTgwgq/QpoMWQ=\""
+          "Value": "\"4TlZvXb5ZE4Zt5daVQB9OfhV1cAmP5lbTAZ3Mp7oc/Y=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 21:29:53 GMT"
+          "Value": "Fri, 08 Nov 2024 22:17:00 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+vjsR35FSZrEElKU/GafVd6zlwF+DJMTgwgq/QpoMWQ="
+          "Value": "sha256-4TlZvXb5ZE4Zt5daVQB9OfhV1cAmP5lbTAZ3Mp7oc/Y="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Client.pdb",
-      "AssetFile": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-ixp396i7fm.gz",
+      "AssetFile": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-ho39v04o6s.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.000103541106"
+          "Quality": "0.000096918007"
         }
       ],
       "ResponseHeaders": [
@@ -21258,15 +21258,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9657"
+          "Value": "10317"
         },
         {
           "Name": "ETag",
-          "Value": "\"Bo9pJ2/pA6J2ro7MBoNrJ+sEwPTF4s9oR15IIcJd7Zk=\""
+          "Value": "\"3oDjKjSBOPpD0CKhdIQGokGf/T6V1sT6e8Ux4MrSJSQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 21:29:53 GMT"
+          "Value": "Fri, 08 Nov 2024 22:17:00 GMT"
         },
         {
           "Name": "Vary",
@@ -21278,19 +21278,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"+vjsR35FSZrEElKU/GafVd6zlwF+DJMTgwgq/QpoMWQ=\""
+          "Value": "W/\"4TlZvXb5ZE4Zt5daVQB9OfhV1cAmP5lbTAZ3Mp7oc/Y=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-+vjsR35FSZrEElKU/GafVd6zlwF+DJMTgwgq/QpoMWQ="
+          "Value": "sha256-4TlZvXb5ZE4Zt5daVQB9OfhV1cAmP5lbTAZ3Mp7oc/Y="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Client.pdb.gz",
-      "AssetFile": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-ixp396i7fm.gz",
+      "AssetFile": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\fw6fh9k3ku-ho39v04o6s.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21307,7 +21307,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "9657"
+          "Value": "10317"
         },
         {
           "Name": "Content-Type",
@@ -21315,11 +21315,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"Bo9pJ2/pA6J2ro7MBoNrJ+sEwPTF4s9oR15IIcJd7Zk=\""
+          "Value": "\"3oDjKjSBOPpD0CKhdIQGokGf/T6V1sT6e8Ux4MrSJSQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 21:29:53 GMT"
+          "Value": "Fri, 08 Nov 2024 22:17:00 GMT"
         },
         {
           "Name": "Vary",
@@ -21329,7 +21329,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Bo9pJ2/pA6J2ro7MBoNrJ+sEwPTF4s9oR15IIcJd7Zk="
+          "Value": "sha256-3oDjKjSBOPpD0CKhdIQGokGf/T6V1sT6e8Ux4MrSJSQ="
         }
       ]
     },
@@ -21356,23 +21356,23 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"5Gmj97A3gsy9Z8jf0PKX3D0XWFZG78gRb1crmsQP5rA=\""
+          "Value": "\"WcE3ccfvpsznL61ioCTxejN5FnlvdYO005nSzZ+8Da8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 21:29:33 GMT"
+          "Value": "Fri, 08 Nov 2024 22:17:01 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5Gmj97A3gsy9Z8jf0PKX3D0XWFZG78gRb1crmsQP5rA="
+          "Value": "sha256-WcE3ccfvpsznL61ioCTxejN5FnlvdYO005nSzZ+8Da8="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Client.wasm",
-      "AssetFile": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-grorslpdej.gz",
+      "AssetFile": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-rr85bmgifc.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
@@ -21399,11 +21399,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"S/2l26XUoik+W7orzbXjpBgsXSnod5Z86nFiMHIRqUU=\""
+          "Value": "\"qXAveQ/WiLTwBQ6qm1ivM4H5dqemzAxqqmSL6zx53iQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 21:29:33 GMT"
+          "Value": "Fri, 08 Nov 2024 22:17:01 GMT"
         },
         {
           "Name": "Vary",
@@ -21415,19 +21415,19 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"5Gmj97A3gsy9Z8jf0PKX3D0XWFZG78gRb1crmsQP5rA=\""
+          "Value": "W/\"WcE3ccfvpsznL61ioCTxejN5FnlvdYO005nSzZ+8Da8=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-5Gmj97A3gsy9Z8jf0PKX3D0XWFZG78gRb1crmsQP5rA="
+          "Value": "sha256-WcE3ccfvpsznL61ioCTxejN5FnlvdYO005nSzZ+8Da8="
         }
       ]
     },
     {
       "Route": "_framework/Frontend.Client.wasm.gz",
-      "AssetFile": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-grorslpdej.gz",
+      "AssetFile": "c:\\code\\dotnet\\PaleoDot\\Frontend\\Frontend.Client\\obj\\Debug\\net8.0\\compressed\\z6eu1ggrk8-rr85bmgifc.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -21452,11 +21452,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"S/2l26XUoik+W7orzbXjpBgsXSnod5Z86nFiMHIRqUU=\""
+          "Value": "\"qXAveQ/WiLTwBQ6qm1ivM4H5dqemzAxqqmSL6zx53iQ=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 04 Nov 2024 21:29:33 GMT"
+          "Value": "Fri, 08 Nov 2024 22:17:01 GMT"
         },
         {
           "Name": "Vary",
@@ -21466,7 +21466,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-S/2l26XUoik+W7orzbXjpBgsXSnod5Z86nFiMHIRqUU="
+          "Value": "sha256-qXAveQ/WiLTwBQ6qm1ivM4H5dqemzAxqqmSL6zx53iQ="
         }
       ]
     },
