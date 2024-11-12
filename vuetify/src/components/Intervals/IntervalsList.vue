@@ -3,8 +3,8 @@
 
   <div class="card">
     <h5>{{ selectedInterval }}</h5>
+    <b>DATA TABLE???</b>
     <DataTable
-      v-if="!loading"
       table-style="min-width: 50rem;min-height:50rem;"
       :value="intervals"
       paginator
@@ -25,11 +25,7 @@
         </template>
       </Column>
     </DataTable>
-    <ProgressSpinner
-      v-if="loading"
-      aria-label="Loading"
-      style="width: 100; height: 100; stroke-width: 8;"
-    />
+
   </div>
 </template>
 
@@ -42,11 +38,11 @@
   import Row from 'primevue/row'
   import Button from 'primevue/button'
   import { useRouter } from 'vue-router'
-  import { useAppStore } from '@/stores/app'
+  // import { useAppStore } from '@/stores/app'
   import ProgressSpinner from 'primevue/progressspinner'
 
   import router from '@/router'
-  const intervals = ref<TInterval[]>([])
+  const intervals = reactive<TInterval[]>([])
   const loading = ref<boolean>(false)
   const selectedInterval = ref<string>('')
   // const router = useRouter()
@@ -55,28 +51,48 @@
   export default {
     name: 'IntervalsList',
     components: {
+
     },
     onMounted () {
       console.log('mounted')
       // [TODO:]
       // fetch('/api/interval').then((res: Response) => res.json()).then((data: TInterval[]) => {
     },
-
-    // onCreated () {
-    //   console.log('created')
-    //   fetch('/api/interval').then((res: Response) => res.json()).then((data: TInterval[]) => {
-    //     console.log('data', data)
-    //     intervals.value.push(...data)
-    //   })
-    // },
     data () {
       return { intervals }
+    },
+    created () {
+      console.log('COMPONENTED CREATED - FETCHING', intervals)
+      // loading.value = true
+      fetch('/api/interval')
+        .then((res: Response) => res.json())
+        .then((data: TInterval[]) => {
+          console.log('data', data)
+          // [TODO:] - store intervals in the store instead on the component ?
+          // appStore.$patch({ intervals: data })
+          const _intervals = data.map((interval: TIntervalDTO) => {
+            const _interval = {
+              intervalNo: interval.interval_no,
+              intervalName: interval.interval_name,
+              minMa: interval.min_ma,
+              maxMa: interval.max_ma,
+              color: interval.color,
+              parentNo: interval.parent_no,
+              recordType: interval.record_type,
+              referenceNo: interval.reference_no,
+            } as TInterval
+            console.log(`data.map - _interval:`, _interval)
+            return _interval
+          })
+          console.log(`data.map - _intervals:`, _intervals)
+          // loading.value = false
+        })
     },
   }
 
 </script>
 <script lang="ts" setup>
-const appStore = useAppStore()
+// const appStore = useAppStore()
 // [TODO:] - Maybe use https://webdevnerdstuff.github.io/vuetify-drilldown-table/ for the drilldown table where diversity is the drilldown
 const onDetailsButtonClicked = (data: TInterval) => {
     console.log(`onDetailsButtonClicked - data:`, data)
@@ -84,36 +100,7 @@ const onDetailsButtonClicked = (data: TInterval) => {
     selectedInterval.value = intervalName
     router.push(`/diversity/${intervalName}`)
   }
-watchEffect(() => {
-  console.log('Intervlas WATCH EFFECT', intervals)
-  loading.value = true
-  fetch('/api/interval')
-    .then((res: Response) => res.json())
-    .then((data: TInterval[]) => {
-      console.log('data', data)
-      intervals.value = data
-      // [TODO:] - store intervals in the store instead on the component ?
-      appStore.$patch({ intervals: data })
-    intervals.value = data.map((interval: TIntervalDTO) => {
-      const _interval = {
-        intervalNo: interval.interval_no,
-        intervalName: interval.interval_name,
-        minMa: interval.min_ma,
-        maxMa: interval.max_ma,
-        color: interval.color,
-        parentNo: interval.parent_no,
-        recordType: interval.record_type,
-        referenceNo: interval.reference_no,
-      } as TInterval
-      console.log(`data.map - _interval:`, _interval)
-      return _interval
-    })
-    loading.value = false
-})
-})
-watch(()=>selectedInterval, (newVal, oldVal) => {
-  console.log(`watch - newVal:`, newVal, `oldVal:`, oldVal)
-})
+
 </script>
 <script lang="ts">
 

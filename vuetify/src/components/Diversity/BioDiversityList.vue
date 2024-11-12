@@ -6,6 +6,7 @@
     <h1>{{ loading ? 'Loading' : 'FALSE' }}</h1>
 
     <ProgressSpinner
+     v-show="loading"
       style="width: 50px; height: 50px"
       stroke-width="8"
       fill="transparent"
@@ -13,7 +14,7 @@
       aria-label="Custom ProgressSpinner"
     />
     <DataTable
-      v-show="!loading"
+    v-show="!loading"
       table-style="min-width: 50rem;min-height:50rem;"
       :value="diversity"
       paginator
@@ -21,7 +22,6 @@
       :row-hover="true"
       :rows-per-page-options="[25, 50, 100]"
       selection-mode="single"
-
     >
       <Column field="intervalName" header="Name" />
       <Column field="maxMya" header="Max Mya" />
@@ -66,11 +66,15 @@
   import { useRouter } from 'vue-router'
   import { useAppStore } from '@/stores/app'
   import router from '@/router'
+  import store from '@/stores'
+  import ProgressSpinner from 'primevue/progressspinner'
 
-  const intervals = ref<TInterval[]>([])
+  const intervals = reactive<TInterval[]>([])
   const selectedInterval = ref<string>('')
   const loading = ref<boolean>(false)
-
+  // const appStore = useAppStore()
+  // console.log(`appStore:`, appStore)
+  const diversity = reactive<TDiversity[]>([])
   export default {
     name: 'BioDiversityList',
     components: {
@@ -89,15 +93,30 @@
     //   })
     // },
     data () {
-      return { intervals }
+      return { diversity }
+    },
+    async created () {
+      console.log('created')
+      // [TODO:] - store intervals in the store instead on the component ?
+      // appStore.$patch({ intervals: data })
+      loading.value = true
+      fetch('/api/occurrence/diversity')
+        .then((res: Response) => res.json())
+        .then((data: TDiversity[]) => {
+          console.log('data', data)
+          diversity.push(...data)
+          // [TODO:] - store intervals in the store instead on the component ?
+          // appStore.$patch({ intervals: data })
+          // loading.value = false
+        })
+        .finally(() => {
+          loading.value = false
+        })
     },
   }
 
 </script>
 <script lang="ts" setup>
-const appStore = useAppStore()
-const diversity = reactive<TDiversity[]>([])
-const loading = ref<boolean>(false)
 
 const onDetailsButtonClicked = (data: TInterval) => {
     console.log(`onDetailsButtonClicked - data:`, data)
@@ -105,18 +124,6 @@ const onDetailsButtonClicked = (data: TInterval) => {
     selectedInterval.value = intervalName
     router.push(`/diversity/${intervalName}`)
   }
-watchEffect(() => {
-  loading.value = true
-  fetch('/api/occurrence/diversity')
-    .then((res: Response) => res.json())
-    .then((data: TDiversity[]) => {
-      console.log('data', data)
-      diversity.push(...data)
-      // [TODO:] - store intervals in the store instead on the component ?
-      appStore.$patch({ intervals: data })
-      loading.value = false
-})
-})
 watch(()=>selectedInterval, (newVal, oldVal) => {
   console.log(`watch - newVal:`, newVal, `oldVal:`, oldVal)
 })

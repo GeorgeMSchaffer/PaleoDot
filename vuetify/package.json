@@ -2,10 +2,10 @@
   "name": "vuetify",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview",
-    "lint": "eslint . --fix --ignore-path .gitignore"
+    "lint": "eslint . --fix --ignore-path .gitignore",
+    "dev": "vite",
+    "preview": "vite preview"
   },
   "dependencies": {
     "@mdi/font": "7.4.47",
@@ -16,11 +16,13 @@
     "vite-plugin-mkcert": "^1.17.6",
     "vue": "^3.4.31",
     "vuetify": "^3.6.11",
-    "vuex": "^4.1.0"
+    "vuex": "^4.1.0",
+    "webfontloader": "^1.0.0"
   },
   "devDependencies": {
     "@babel/types": "^7.24.7",
     "@types/node": "^20.14.10",
+    "@types/webfontloader": "^1.0.0",
     "@vitejs/plugin-vue": "^5.0.5",
     "@vue/eslint-config-typescript": "^13.0.0",
     "eslint": "^8.57.0",
@@ -41,7 +43,9 @@
     "vite": "^5.3.3",
     "vite-plugin-vue-layouts": "^0.11.0",
     "vite-plugin-vuetify": "^2.0.3",
+    "vue-cli-plugin-vuetify": "~2.5.8",
     "vue-router": "^4.4.0",
-    "vue-tsc": "^2.0.26"
+    "vue-tsc": "^2.0.26",
+    "webpack-plugin-vuetify": "^2.0.0-alpha.0"
   }
 }

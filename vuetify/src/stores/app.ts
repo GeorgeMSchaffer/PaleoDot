@@ -2,6 +2,7 @@
 import { defineStore } from 'pinia'
 import { TDiversity, TInterval, TOccurrence } from '@/common/types'
 import Occurrences from '@/pages/occurrences.vue'
+
 export const useAppStore = defineStore('app', {
   state: () => ({
     intervals: [] as TInterval[],
