@@ -2,87 +2,49 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.Extensions.Logging;
 using Newtonsoft.Json;
 using Backend.Models;
+using Microsoft.Extensions.Logging;
 
 namespace Backend.Contexts;
 using Microsoft.EntityFrameworkCore;
 using Backend.Models;
 using AutoMapper;
 using Backend.Mapper;
-
+using System.Diagnostics;
+using SQLitePCL;
 public class AppDbContext : DbContext
-{
-    private readonly IMapper _mapper;
-    public IConfigurationProvider OccurrenceProfile { get; }
-    public IConfigurationProvider IntervalProfile { get; }
-    private readonly ILogger<DbContext> _logger;
-
-    public AppDbContext(
-        DbContextOptions<AppDbContext> options
-        , IMapper _mapper
-        )
-        : base(options)
     {
-        this._mapper = _mapper;
-        this._logger = (ILogger<DbContext>?)_logger;
+        private static readonly ILoggerFactory _loggerFactory = LoggerFactory.Create(builder =>
+        {
+            builder.AddConsole();
+        });
+
+        public DbSet<Interval> Intervals { get; set; }
+        public DbSet<Occurrence> Occurrences { get; set; }
+        public DbSet<Cladistics> Cladistics { get; set; }
+
+        public AppDbContext(DbContextOptions<AppDbContext> options)
+            : base(options)
+        {
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            if (!optionsBuilder.IsConfigured)
+            {
+                optionsBuilder
+                    .UseLoggerFactory(_loggerFactory) // Use the logger factory
+                    .EnableSensitiveDataLogging() // Enable sensitive data logging
+                    .EnableDetailedErrors(); // Enable detailed errors
+            }
+        }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+
+            modelBuilder.Entity<Interval>()
+                .HasMany(i => i.Occurrences)
+                .WithOne(o => o.Interval)
+                .HasForeignKey(o => o.EarlyIntervalNo);
+        }
     }
-
-    public DbSet<Interval> Intervals => Set<Interval>();
-    public DbSet<Occurrence> Occurrences => Set<Occurrence>();
-    public DbSet<Cladistics> Cladistics => Set<Cladistics>();
-    
-  //  public DbSet<Species> Species => Set<Species>();
-   // public DbSet<Taxa> Taxas => Set<Taxa>();
-   protected override void OnModelCreating(ModelBuilder modelBuilder)
-   {
-       modelBuilder.Entity<Occurrence>()
-           .HasOne(o => o.Interval)
-           .WithMany(i => i.Occurrences)
-           .HasForeignKey(o => o.EarlyIntervalNo)
-           .HasPrincipalKey(i => i.IntervalNo);
-       
-       base.OnModelCreating(modelBuilder);
-   }
-    // protected override void OnModelCreating(ModelBuilder modelBuilder)
-    // {
-//         var occurrencesJSON = System.IO.File.ReadAllText("Data/carnian-occurrences.json");
-//         var intervals = System.IO.File.ReadAllText("Data/intervals.json");
-//        // var deserializedOccurrences = JsonSerializer.Deserialize<List<Occurrence>>(occurrences);
-//        
-//        
-//        modelBuilder.Entity<Occurrence>().HasData(occurrencesJSON);
-// //       modelBuilder.Entity<Interval>().HasData(intervals);
-//         List<Occurrence> occurrences = _mapper.Map<List<Occurrence>>(occurrencesJSON);
-//        _logger.LogInformation($"Try to insert {occurrences.Count} occurrences");
-//        
-        // modelBuilder.Entity<Occurrence>()
-        //     .HasMany<Species>(navigationExpression: o => o.Species)
-        //     .WithOne(navigationExpression: s => s.Occurrence);
-        //    .HasForeignKey(foreignKeyExpression: s => s.AcceptedNo);
-
-        // modelBuilder.Entity<Occurrence>()
-        //     .HasOne(o => o.Interval)
-        //     .WithMany(i => i.Occurrences)
-        //     .HasForeignKey(o => o.EarlyIntervalNo);
-
-       // modelBuilder.Entity<Occurrence>()
-       //     .HasOne<Interval>(o => o.EarlyInterval);
-           //.WithOne(o => o.EarlyInterval)
-           //.HasForeignKey("interval_no");
-
-     //  modelBuilder.Entity<Interval>().HasMany<Occurrence>().WithOne(o=>o.LateInterval);
-
-     //  modelBuilder.Entity<Occurrence>().HasOne<Interval>();
-       
-        // modelBuilder.Entity<Occurrence>()
-        //     .HasOne<Interval>(navigationExpression: o => o.Interval)
-        //     .WithMany(navigationExpression: i => i.Occurrences)
-        //     .HasForeignKey(foreignKeyExpression: o => o.EarlyInterval);
-        //
-
-        // modelBuilder.Entity<Species>()
-        //     .HasMany(s => s.OccurrenceNo)
-    //     base.OnModelCreating(modelBuilder);
-    //
-    // }
-
-}

@@ -1,0 +1,11 @@
+@HOST = https://localhost:8080
+
+GET {{HOST}}/api/interval HTTP/1.1
+
+###
+GET {{HOST}}/api/interval/1 HTTP/1.1
+###
+GET {{HOST}}/api/occurrence HTTP/1.1
+
+###
+GET {{HOST}}/api/interval/occurrences/cenozoic HTTP/1.1

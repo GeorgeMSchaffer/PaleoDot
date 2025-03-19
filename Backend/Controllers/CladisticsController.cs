@@ -34,14 +34,14 @@ namespace Backend.Controllers
 
         // GET: api/Cladistics
         [HttpGet("")]
-        public async Task<ActionResult<List<CladisticsDTO>>> GetCladisitics([FromQuery] int skip = 0, [FromQuery] int limit = 10, [FromQuery] string? sortBy = "interval_no", [FromQuery] string? sortDir = "ASC")
+        public async Task<ActionResult<List<CladisticsDTO>>> GetCladisitics([FromQuery] int skip = 0, [FromQuery] int limit = 10, [FromQuery] string? orderBy = "interval_no", [FromQuery] string? sortDir = "ASC")
         {
             PaginationDTO pagination = new PaginationDTO()
             {
                 limit = limit,
                 skip = skip,
-                sortBy = sortBy,
-                sortDir = sortDir
+                sortBy = orderBy,
+                orderDir = sortDir
             };
             var cladisticsDTOs = await _service.getAll(pagination);
             if(cladisticsDTOs == null)

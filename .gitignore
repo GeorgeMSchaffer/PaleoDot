@@ -21,3 +21,9 @@ Frontend/node_modules
 /.vs/PaleoDot/v17
 /Frontend/Frontend.Client/bin/Debug/net8.0/wwwroot/_framework
 /Frontend/Frontend.Client/bin
+
+.fake
+/Frontend/Frontend.Client/bin
+/Frontend/Frontend.Client/bin
+/Frontend/Frontend.Client/obj
+/Frontend/Frontend.Client/bin
