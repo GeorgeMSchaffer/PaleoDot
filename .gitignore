@@ -27,3 +27,5 @@ Frontend/node_modules
 /Frontend/Frontend.Client/bin
 /Frontend/Frontend.Client/obj
 /Frontend/Frontend.Client/bin
+/UnitTests/bin
+/UnitTests/obj/Debug/net8.0
